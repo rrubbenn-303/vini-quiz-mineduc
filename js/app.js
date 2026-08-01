@@ -18,6 +18,7 @@ const scoreDisplay = document.getElementById('score-display');
 const streakDisplay = document.getElementById('streak-display');
 const multiplierDisplay = document.getElementById('multiplier-display');
 const currentModuleDisplay = document.getElementById('current-module-display');
+const progressDisplay = document.getElementById('progress-display');
 
 // Preguntas
 const difficultyBadge = document.getElementById('difficulty-badge');
@@ -56,6 +57,11 @@ moduleSelect.addEventListener('change', () => {
 
 // Iniciar Juego
 startBtn.addEventListener('click', () => {
+    // Inicializar audio context si estaba suspendido (política de navegadores)
+    if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+
     const selectedModule = moduleSelect.value;
     const hasQuestions = engine.startSession(selectedModule);
 
@@ -64,6 +70,7 @@ startBtn.addEventListener('click', () => {
         return;
     }
 
+    SoundEffects.startMission();
     currentHighestStreak = 0;
     currentModuleDisplay.textContent = selectedModule;
     updateHUD();
@@ -118,9 +125,11 @@ function handleAnswer(selectedOption, btnElement) {
 
     if (result.isCorrect) {
         btnElement.classList.add('correct');
+        SoundEffects.correctAnswer();
         showFeedback(true, `¡Ganaste ${result.pointsEarned} puntos!\n${result.feedback}`);
     } else {
         btnElement.classList.add('wrong');
+        SoundEffects.wrongAnswer();
         // Resaltar la correcta
         allBtns.forEach(b => {
             if(b.textContent === result.correctAnswer) b.classList.add('correct');
@@ -137,6 +146,11 @@ function updateHUD() {
     scoreDisplay.textContent = engine.score;
     streakDisplay.textContent = engine.streak;
     multiplierDisplay.textContent = engine.getMultiplier();
+
+    const stats = engine.getStats();
+    let currentQ = stats.questionsAnswered + 1;
+    if (currentQ > stats.totalQuestions) currentQ = stats.totalQuestions;
+    progressDisplay.textContent = `Pregunta ${currentQ} / ${stats.totalQuestions}`;
 }
 
 // Mostrar Feedback
@@ -177,10 +191,12 @@ function endGame() {
     finalStreak.textContent = currentHighestStreak;
 
     if (stats.won) {
+        SoundEffects.victory();
         endTitle.textContent = "¡MISIÓN COMPLETADA! 🏆";
         endTitle.style.color = "var(--neon-green)";
         endMessage.textContent = "¡Eres un explorador espacial increíble!";
     } else {
+        SoundEffects.gameOver();
         endTitle.textContent = "¡NAVE DESTRUIDA! 💥";
         endTitle.style.color = "var(--neon-pink)";
         endMessage.textContent = "No te rindas, vuelve a intentarlo.";

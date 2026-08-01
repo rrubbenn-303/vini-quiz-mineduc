@@ -34,8 +34,9 @@ class QuizEngine {
         // Filtrar preguntas por el módulo seleccionado
         let filtered = this.allQuestions.filter(q => q.modulo_eduhome === moduloEduhome);
 
-        // Mezclar las preguntas (shuffle) para que no salgan en el mismo orden
-        this.sessionQuestions = this._shuffleArray(filtered);
+        // Mezclar las preguntas (shuffle) y seleccionar un máximo de 5 por misión
+        let shuffled = this._shuffleArray(filtered);
+        this.sessionQuestions = shuffled.slice(0, 5);
 
         // Reiniciar estado
         this.currentQuestionIndex = 0;
@@ -103,7 +104,8 @@ class QuizEngine {
         return {
             score: this.score,
             questionsAnswered: this.currentQuestionIndex,
-            won: this.lives > 0
+            totalQuestions: this.sessionQuestions.length,
+            won: this.lives > 0 && this.currentQuestionIndex >= this.sessionQuestions.length
         };
     }
 
