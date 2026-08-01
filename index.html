@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Espacial de Vini - Eduhome</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <div class="container">
+        <!-- Pantalla de Inicio / Selección de Módulo -->
+        <section id="start-screen" class="screen active">
+            <h1 class="glitch" data-text="Aventura Espacial">Aventura Espacial</h1>
+            <h2 class="subtitle">¡Hola Vini! ¿Qué misión te toca hoy?</h2>
+
+            <div class="module-selector">
+                <label for="module-select">Elige tu módulo de Eduhome:</label>
+                <select id="module-select">
+                    <option value="" disabled selected>-- Selecciona un Módulo --</option>
+                    <optgroup label="Lenguaje">
+                        <option value="Lenguaje y Comunicación">Lenguaje y Comunicación</option>
+                        <option value="Taller de Comprensión Lectora">Taller de Comprensión Lectora</option>
+                        <option value="Reforzamiento de Lenguaje">Reforzamiento de Lenguaje</option>
+                    </optgroup>
+                    <optgroup label="Matemática">
+                        <option value="Matemática">Matemática</option>
+                        <option value="Reforzamiento de Matemática">Reforzamiento de Matemática</option>
+                    </optgroup>
+                    <optgroup label="Ciencias e Historia">
+                        <option value="Ciencias Naturales">Ciencias Naturales</option>
+                        <option value="Historia, Geografía y Ciencias Sociales">Historia, Geografía y Ciencias Sociales</option>
+                    </optgroup>
+                    <optgroup label="Inglés">
+                        <option value="English">English</option>
+                        <option value="English With Fun">English With Fun</option>
+                    </optgroup>
+                    <optgroup label="Artes y Creatividad">
+                        <option value="Educación Artística">Educación Artística</option>
+                        <option value="Teoría Musical">Teoría Musical</option>
+                        <option value="Interpretación Musical">Interpretación Musical</option>
+                        <option value="Robótica">Robótica</option>
+                    </optgroup>
+                    <optgroup label="Desarrollo Integral">
+                        <option value="Educación Socioemocional">Educación Socioemocional</option>
+                        <option value="Taller de Funciones Ejecutivas">Taller de Funciones Ejecutivas</option>
+                        <option value="Taller de Movimiento y Coordinación">Taller de Movimiento y Coordinación</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <button id="start-btn" class="btn btn-primary" disabled>¡INICIAR MISIÓN! 🚀</button>
+        </section>
+
+        <!-- Pantalla de Juego -->
+        <section id="game-screen" class="screen hidden">
+            <header class="game-header">
+                <div class="hud-item">
+                    <span class="icon">❤️</span> <span id="lives-display">3</span>
+                </div>
+                <div class="hud-item">
+                    <span class="icon">⭐</span> Puntos: <span id="score-display">0</span>
+                </div>
+                <div class="hud-item streak-container">
+                    <span class="icon">🔥</span> Racha: <span id="streak-display">0</span> (x<span id="multiplier-display">1</span>)
+                </div>
+                <div class="hud-item">
+                    <span id="current-module-display">Módulo</span>
+                </div>
+            </header>
+
+            <main class="question-container">
+                <div class="difficulty-badge" id="difficulty-badge">Fácil</div>
+                <h2 id="question-text">¿Cargando pregunta...?</h2>
+                <div id="options-container" class="options-grid">
+                    <!-- Las opciones se inyectan acá mediante JS -->
+                </div>
+            </main>
+
+            <!-- Modal de Feedback (Acierto o Fallo) -->
+            <div id="feedback-modal" class="modal hidden">
+                <div class="modal-content">
+                    <h2 id="feedback-title">¡Correcto!</h2>
+                    <p id="feedback-text">Retroalimentación acá</p>
+                    <button id="next-question-btn" class="btn btn-secondary">Siguiente Pregunta ➡️</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pantalla de Fin de Juego (Victoria o Derrota) -->
+        <section id="end-screen" class="screen hidden">
+            <h1 id="end-title">¡Misión Completada!</h1>
+            <div class="end-stats">
+                <p>Puntuación Final: <span id="final-score" class="highlight">0</span></p>
+                <p>Mayor Racha: <span id="final-streak" class="highlight">0</span></p>
+            </div>
+            <p id="end-message">¡Buen trabajo, Vini!</p>
+            <button id="restart-btn" class="btn btn-primary">Volver a la Base 🏠</button>
+        </section>
+    </div>
+
+    <script src="js/quizEngine.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
