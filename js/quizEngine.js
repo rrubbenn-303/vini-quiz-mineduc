@@ -21,7 +21,9 @@ class QuizEngine {
 
     async loadQuestions() {
         try {
-            const response = await fetch('data/preguntas.json');
+            // Añadir un parámetro timestamp para evitar el caché del navegador y cargar el JSON más reciente
+            const timestamp = new Date().getTime();
+            const response = await fetch(`data/preguntas.json?t=${timestamp}`);
             this.allQuestions = await response.json();
             return true;
         } catch (error) {
