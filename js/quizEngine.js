@@ -34,9 +34,25 @@ class QuizEngine {
         // Filtrar preguntas por el módulo seleccionado
         let filtered = this.allQuestions.filter(q => q.modulo_eduhome === moduloEduhome);
 
-        // Mezclar las preguntas (shuffle) y seleccionar un máximo de 5 por misión
+        if (filtered.length === 0) {
+            return false;
+        }
+
         let shuffled = this._shuffleArray(filtered);
-        this.sessionQuestions = shuffled.slice(0, 5);
+        this.sessionQuestions = [];
+
+        // Garantizar exactamente 5 preguntas
+        if (shuffled.length >= 5) {
+            this.sessionQuestions = shuffled.slice(0, 5);
+        } else {
+            // Si hay menos de 5, rellenar duplicando preguntas aleatoriamente
+            this.sessionQuestions = [...shuffled];
+            while (this.sessionQuestions.length < 5) {
+                const randomQuestion = shuffled[Math.floor(Math.random() * shuffled.length)];
+                // Clonar el objeto de la pregunta para evitar referencias cruzadas raras
+                this.sessionQuestions.push({...randomQuestion});
+            }
+        }
 
         // Reiniciar estado
         this.currentQuestionIndex = 0;
@@ -44,7 +60,7 @@ class QuizEngine {
         this.score = 0;
         this.streak = 0;
 
-        return this.sessionQuestions.length > 0;
+        return true;
     }
 
     getCurrentQuestion() {
