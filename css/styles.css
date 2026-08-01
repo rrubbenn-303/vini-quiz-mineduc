@@ -1,0 +1,353 @@
+/* Variables y configuración base */
+:root {
+    --space-dark: #0b0f19;
+    --space-blue: #1a2a42;
+    --neon-blue: #00f3ff;
+    --neon-pink: #ff007f;
+    --neon-green: #39ff14;
+    --neon-yellow: #fffb00;
+    --text-light: #ffffff;
+    --font-retro: 'Press Start 2P', cursive;
+    --font-fun: 'Fredoka One', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--space-dark);
+    color: var(--text-light);
+    font-family: var(--font-fun);
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Efecto de estrellas de fondo animado */
+#stars, #stars2, #stars3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: transparent;
+}
+
+@keyframes animStar {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-2000px); }
+}
+
+/* Simplificado para no hacer el CSS de 1000 líneas. Usaremos background-image de ruido o radial para estrellas en JS, o un patrón simple. */
+#stars {
+    background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+                      radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+                      radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+                      radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+                      radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+                      radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: animStar 50s linear infinite;
+}
+
+/* Contenedor Principal */
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Pantallas */
+.screen {
+    background: rgba(26, 42, 66, 0.85);
+    border: 4px solid var(--neon-blue);
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 0 20px var(--neon-blue), inset 0 0 20px var(--neon-blue);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.screen.active {
+    display: flex;
+    animation: fadeIn 0.5s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Tipografía de inicio */
+.glitch {
+    font-family: var(--font-retro);
+    font-size: 2rem;
+    color: var(--neon-yellow);
+    text-shadow: 2px 2px var(--neon-pink);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--neon-blue);
+    margin-bottom: 30px;
+}
+
+/* Selector */
+.module-selector {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.module-selector label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    font-family: var(--font-fun);
+    font-size: 1.1rem;
+    background: var(--space-dark);
+    color: var(--text-light);
+    border: 2px solid var(--neon-pink);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+select:focus {
+    box-shadow: 0 0 15px var(--neon-pink);
+}
+
+/* Botones */
+.btn {
+    font-family: var(--font-retro);
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.2s;
+    text-transform: uppercase;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:disabled {
+    background: #555;
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: var(--neon-green);
+    color: var(--space-dark);
+    box-shadow: 0 5px 0 #28b811, 0 0 15px var(--neon-green);
+}
+
+.btn-primary:not(:disabled):hover {
+    box-shadow: 0 5px 0 #28b811, 0 0 30px var(--neon-green);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--neon-blue);
+    color: var(--space-dark);
+    box-shadow: 0 5px 0 #00b0b8, 0 0 15px var(--neon-blue);
+}
+
+/* Interfaz de Juego (HUD) */
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--neon-yellow);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hud-item {
+    font-family: var(--font-retro);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.streak-container {
+    color: var(--neon-yellow);
+}
+
+/* Área de preguntas */
+.question-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.difficulty-badge {
+    background: var(--neon-pink);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: var(--font-retro);
+    font-size: 0.6rem;
+}
+
+#question-text {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Opciones de respuesta */
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.option-btn {
+    background: var(--space-blue);
+    color: var(--text-light);
+    border: 3px solid var(--neon-blue);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family: var(--font-fun);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.option-btn:hover {
+    background: rgba(0, 243, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.option-btn.correct {
+    background: var(--neon-green);
+    color: var(--space-dark);
+    border-color: #fff;
+    animation: flashGreen 0.5s;
+}
+
+.option-btn.wrong {
+    background: var(--neon-pink);
+    color: #fff;
+    border-color: #fff;
+    animation: shake 0.5s;
+}
+
+@keyframes flashGreen {
+    0%, 100% { background: var(--neon-green); }
+    50% { background: #fff; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+}
+
+/* Modal de Retroalimentación */
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background: var(--space-blue);
+    border: 4px solid var(--neon-yellow);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+#feedback-title {
+    font-family: var(--font-retro);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#feedback-title.success { color: var(--neon-green); }
+#feedback-title.error { color: var(--neon-pink); }
+
+#feedback-text {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Pantalla Final */
+.end-stats {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.end-stats p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: var(--neon-yellow);
+    font-family: var(--font-retro);
+    font-size: 1.5rem;
+}
+
+#end-message {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: var(--neon-blue);
+}
