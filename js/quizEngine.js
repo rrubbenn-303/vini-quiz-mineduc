@@ -43,13 +43,13 @@ class QuizEngine {
         let shuffled = this._shuffleArray(filtered);
         this.sessionQuestions = [];
 
-        // Garantizar exactamente 5 preguntas
-        if (shuffled.length >= 5) {
-            this.sessionQuestions = shuffled.slice(0, 5);
+        // Garantizar exactamente 7 preguntas
+        if (shuffled.length >= 7) {
+            this.sessionQuestions = shuffled.slice(0, 7);
         } else {
-            // Si hay menos de 5, rellenar duplicando preguntas aleatoriamente
+            // Si hay menos de 7, rellenar duplicando preguntas aleatoriamente
             this.sessionQuestions = [...shuffled];
-            while (this.sessionQuestions.length < 5) {
+            while (this.sessionQuestions.length < 7) {
                 const randomQuestion = shuffled[Math.floor(Math.random() * shuffled.length)];
                 // Clonar el objeto de la pregunta para evitar referencias cruzadas raras
                 this.sessionQuestions.push({...randomQuestion});
