@@ -21,7 +21,9 @@ class QuizEngine {
 
     async loadQuestions() {
         try {
-            const response = await fetch('data/preguntas.json');
+            // Añadir un parámetro timestamp para evitar el caché del navegador y cargar el JSON más reciente
+            const timestamp = new Date().getTime();
+            const response = await fetch(`data/preguntas.json?t=${timestamp}`);
             this.allQuestions = await response.json();
             return true;
         } catch (error) {
@@ -34,9 +36,25 @@ class QuizEngine {
         // Filtrar preguntas por el módulo seleccionado
         let filtered = this.allQuestions.filter(q => q.modulo_eduhome === moduloEduhome);
 
-        // Mezclar las preguntas (shuffle) y seleccionar un máximo de 5 por misión
+        if (filtered.length === 0) {
+            return false;
+        }
+
         let shuffled = this._shuffleArray(filtered);
-        this.sessionQuestions = shuffled.slice(0, 5);
+        this.sessionQuestions = [];
+
+        // Garantizar exactamente 7 preguntas
+        if (shuffled.length >= 7) {
+            this.sessionQuestions = shuffled.slice(0, 7);
+        } else {
+            // Si hay menos de 7, rellenar duplicando preguntas aleatoriamente
+            this.sessionQuestions = [...shuffled];
+            while (this.sessionQuestions.length < 7) {
+                const randomQuestion = shuffled[Math.floor(Math.random() * shuffled.length)];
+                // Clonar el objeto de la pregunta para evitar referencias cruzadas raras
+                this.sessionQuestions.push({...randomQuestion});
+            }
+        }
 
         // Reiniciar estado
         this.currentQuestionIndex = 0;
@@ -44,7 +62,7 @@ class QuizEngine {
         this.score = 0;
         this.streak = 0;
 
-        return this.sessionQuestions.length > 0;
+        return true;
     }
 
     getCurrentQuestion() {

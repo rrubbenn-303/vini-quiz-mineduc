@@ -31,10 +31,146 @@
             "Signos de exclamación (¡!)"
         ],
         "respuesta_correcta": "Signos de interrogación (¿?)",
-        "retroalimentacion": "Los signos de interrogación (¿?) se utilizan al principio y al final de una oración para indicar que es una pregunta."
+        "retroalimentacion": "Los signos de interrogación se utilizan al principio y al final para indicar una pregunta."
     },
     {
         "id": 3,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Lenguaje y Comunicación",
+        "eje": "Lectura",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué palabra es un adjetivo?",
+        "opciones": [
+            "correr",
+            "hermoso",
+            "mesa",
+            "ayer"
+        ],
+        "respuesta_correcta": "hermoso",
+        "retroalimentacion": "Los adjetivos describen características de los sustantivos, como 'hermoso'."
+    },
+    {
+        "id": 4,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Lenguaje y Comunicación",
+        "eje": "Escritura",
+        "oa": "OA 12",
+        "dificultad": "Media",
+        "pregunta": "¿Dónde se usa el punto y aparte?",
+        "opciones": [
+            "Para separar palabras",
+            "Al final de una oración",
+            "Al final de un párrafo",
+            "Para hacer una pregunta"
+        ],
+        "respuesta_correcta": "Al final de un párrafo",
+        "retroalimentacion": "El punto y aparte marca el final de un párrafo y separa ideas distintas."
+    },
+    {
+        "id": 5,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Lenguaje y Comunicación",
+        "eje": "Comunicación Oral",
+        "oa": "OA 27",
+        "dificultad": "Fácil",
+        "pregunta": "Cuando alguien expone sobre un tema, tú debes...",
+        "opciones": [
+            "Gritar",
+            "Escuchar con atención",
+            "Dormir",
+            "Jugar con el lápiz"
+        ],
+        "respuesta_correcta": "Escuchar con atención",
+        "retroalimentacion": "Escuchar con atención demuestra respeto hacia la persona que está hablando."
+    },
+    {
+        "id": 6,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Lenguaje y Comunicación",
+        "eje": "Lectura",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cuál de estas palabras es un verbo?",
+        "opciones": [
+            "saltar",
+            "gato",
+            "rojo",
+            "feliz"
+        ],
+        "respuesta_correcta": "saltar",
+        "retroalimentacion": "Los verbos indican acciones que realizan los sujetos."
+    },
+    {
+        "id": 7,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Lenguaje y Comunicación",
+        "eje": "Escritura",
+        "oa": "OA 13",
+        "dificultad": "Media",
+        "pregunta": "¿Cuál palabra está escrita en plural?",
+        "opciones": [
+            "árbol",
+            "mesas",
+            "sol",
+            "perro"
+        ],
+        "respuesta_correcta": "mesas",
+        "retroalimentacion": "El plural indica que hay más de un objeto, usualmente terminando en 's'."
+    },
+    {
+        "id": 8,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Lenguaje y Comunicación",
+        "eje": "Lectura",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cuál de estos es un sinónimo de 'feliz'?",
+        "opciones": [
+            "triste",
+            "enojado",
+            "contento",
+            "rápido"
+        ],
+        "respuesta_correcta": "contento",
+        "retroalimentacion": "Los sinónimos son palabras diferentes que significan lo mismo."
+    },
+    {
+        "id": 9,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Lenguaje y Comunicación",
+        "eje": "Lectura",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Qué es el antónimo de 'grande'?",
+        "opciones": [
+            "enorme",
+            "pequeño",
+            "lindo",
+            "fuerte"
+        ],
+        "respuesta_correcta": "pequeño",
+        "retroalimentacion": "Los antónimos son palabras que significan lo contrario."
+    },
+    {
+        "id": 10,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Lenguaje y Comunicación",
+        "eje": "Escritura",
+        "oa": "OA 14",
+        "dificultad": "Difícil",
+        "pregunta": "¿Qué tipo de texto narra hechos reales de la actualidad?",
+        "opciones": [
+            "Un cuento",
+            "Una leyenda",
+            "Una noticia",
+            "Un poema"
+        ],
+        "respuesta_correcta": "Una noticia",
+        "retroalimentacion": "Las noticias informan de manera objetiva sobre cosas que suceden en la realidad."
+    },
+    {
+        "id": 11,
         "asignatura": "Lenguaje",
         "modulo_eduhome": "Taller de Comprensión Lectora",
         "eje": "Lectura",
@@ -48,10 +184,163 @@
             "El título"
         ],
         "respuesta_correcta": "El inicio",
-        "retroalimentacion": "El inicio de un cuento suele presentar a los personajes y el lugar donde ocurre la historia."
+        "retroalimentacion": "El inicio presenta a los personajes y el lugar donde ocurre la historia."
     },
     {
-        "id": 4,
+        "id": 12,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Taller de Comprensión Lectora",
+        "eje": "Lectura",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "En el cuento de Caperucita Roja, ¿quién es el personaje principal?",
+        "opciones": [
+            "El lobo",
+            "La abuelita",
+            "Caperucita Roja",
+            "El cazador"
+        ],
+        "respuesta_correcta": "Caperucita Roja",
+        "retroalimentacion": "El personaje principal es el más importante de la historia."
+    },
+    {
+        "id": 13,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Taller de Comprensión Lectora",
+        "eje": "Lectura",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "¿Qué es la moraleja de una fábula?",
+        "opciones": [
+            "El título",
+            "El dibujo",
+            "Una enseñanza o lección",
+            "El autor"
+        ],
+        "respuesta_correcta": "Una enseñanza o lección",
+        "retroalimentacion": "Las fábulas siempre dejan una enseñanza llamada moraleja al final."
+    },
+    {
+        "id": 14,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Taller de Comprensión Lectora",
+        "eje": "Lectura",
+        "oa": "OA 3",
+        "dificultad": "Difícil",
+        "pregunta": "Si el texto dice 'Las nubes estaban oscuras y se escuchaban truenos', ¿qué podemos inferir?",
+        "opciones": [
+            "Que va a salir el sol",
+            "Que es de noche",
+            "Que va a llover fuerte",
+            "Que es primavera"
+        ],
+        "respuesta_correcta": "Que va a llover fuerte",
+        "retroalimentacion": "Inferir es usar pistas del texto para descubrir algo que no está escrito directamente."
+    },
+    {
+        "id": 15,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Taller de Comprensión Lectora",
+        "eje": "Lectura",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué tipo de texto es una receta de cocina?",
+        "opciones": [
+            "Texto poético",
+            "Texto instructivo",
+            "Cuento",
+            "Noticia"
+        ],
+        "respuesta_correcta": "Texto instructivo",
+        "retroalimentacion": "Las recetas dan instrucciones paso a paso para preparar algo."
+    },
+    {
+        "id": 16,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Taller de Comprensión Lectora",
+        "eje": "Lectura",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "¿Qué significa cuando un personaje está 'temblando de miedo'?",
+        "opciones": [
+            "Que tiene calor",
+            "Que está muy asustado",
+            "Que tiene hambre",
+            "Que quiere jugar"
+        ],
+        "respuesta_correcta": "Que está muy asustado",
+        "retroalimentacion": "El cuerpo reacciona temblando cuando sentimos un susto o miedo muy grande."
+    },
+    {
+        "id": 17,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Taller de Comprensión Lectora",
+        "eje": "Lectura",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "En un texto, ¿qué información nos da el título?",
+        "opciones": [
+            "El precio del libro",
+            "El nombre de la historia",
+            "La edad del autor",
+            "El color de las páginas"
+        ],
+        "respuesta_correcta": "El nombre de la historia",
+        "retroalimentacion": "El título nos anticipa de qué se tratará la lectura."
+    },
+    {
+        "id": 18,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Taller de Comprensión Lectora",
+        "eje": "Lectura",
+        "oa": "OA 3",
+        "dificultad": "Difícil",
+        "pregunta": "Si lees: 'Juan corría hacia la meta sudando y sin aire', ¿qué está haciendo Juan?",
+        "opciones": [
+            "Durmiendo",
+            "Comiendo",
+            "Participando en una carrera",
+            "Viendo la televisión"
+        ],
+        "respuesta_correcta": "Participando en una carrera",
+        "retroalimentacion": "Podemos deducir que está en una carrera por las palabras 'meta', 'corría' y 'sudando'."
+    },
+    {
+        "id": 19,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Taller de Comprensión Lectora",
+        "eje": "Lectura",
+        "oa": "OA 5",
+        "dificultad": "Media",
+        "pregunta": "¿Qué expresa principalmente un poema?",
+        "opciones": [
+            "Noticias del día",
+            "Sentimientos y emociones",
+            "Pasos para armar un juguete",
+            "Datos sobre animales"
+        ],
+        "respuesta_correcta": "Sentimientos y emociones",
+        "retroalimentacion": "Los poemas están escritos en verso y buscan expresar la belleza y los sentimientos del autor."
+    },
+    {
+        "id": 20,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Taller de Comprensión Lectora",
+        "eje": "Lectura",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "¿Cuál es el propósito de una leyenda?",
+        "opciones": [
+            "Vender un producto",
+            "Dar instrucciones",
+            "Explicar el origen de algo con fantasía y realidad",
+            "Enseñar a sumar"
+        ],
+        "respuesta_correcta": "Explicar el origen de algo con fantasía y realidad",
+        "retroalimentacion": "Las leyendas son relatos tradicionales que mezclan hechos reales con magia para explicar fenómenos."
+    },
+    {
+        "id": 21,
         "asignatura": "Lenguaje",
         "modulo_eduhome": "Reforzamiento de Lenguaje",
         "eje": "Lectura",
@@ -65,10 +354,163 @@
             "5"
         ],
         "respuesta_correcta": "4",
-        "retroalimentacion": "La palabra se divide así: E - le - fan - te. ¡Son 4 sílabas!"
+        "retroalimentacion": "La palabra se divide así: E - le - fan - te."
     },
     {
-        "id": 5,
+        "id": 22,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Reforzamiento de Lenguaje",
+        "eje": "Lectura",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cuál es la letra inicial de 'Sol'?",
+        "opciones": [
+            "A",
+            "S",
+            "M",
+            "L"
+        ],
+        "respuesta_correcta": "S",
+        "retroalimentacion": "La palabra Sol comienza con la letra S."
+    },
+    {
+        "id": 23,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Reforzamiento de Lenguaje",
+        "eje": "Escritura",
+        "oa": "OA 12",
+        "dificultad": "Media",
+        "pregunta": "Identifica la palabra escrita correctamente:",
+        "opciones": [
+            "Hárbol",
+            "Árbol",
+            "Harbol",
+            "Arvol"
+        ],
+        "respuesta_correcta": "Árbol",
+        "retroalimentacion": "La palabra correcta es 'Árbol' y lleva tilde por ser grave terminada en 'l'."
+    },
+    {
+        "id": 24,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Reforzamiento de Lenguaje",
+        "eje": "Lectura",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Qué rima con 'gato'?",
+        "opciones": [
+            "Perro",
+            "Ratón",
+            "Zapato",
+            "Casa"
+        ],
+        "respuesta_correcta": "Zapato",
+        "retroalimentacion": "Gato y zapato terminan con el mismo sonido '-ato'."
+    },
+    {
+        "id": 25,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Reforzamiento de Lenguaje",
+        "eje": "Escritura",
+        "oa": "OA 12",
+        "dificultad": "Fácil",
+        "pregunta": "Las oraciones siempre deben comenzar con...",
+        "opciones": [
+            "Un dibujo",
+            "Punto final",
+            "Mayúscula",
+            "Una coma"
+        ],
+        "respuesta_correcta": "Mayúscula",
+        "retroalimentacion": "La regla general de escritura es empezar toda oración con letra mayúscula."
+    },
+    {
+        "id": 26,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Reforzamiento de Lenguaje",
+        "eje": "Lectura",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué letra falta en la palabra _esa (mueble para comer)?",
+        "opciones": [
+            "p",
+            "m",
+            "s",
+            "t"
+        ],
+        "respuesta_correcta": "m",
+        "retroalimentacion": "La palabra es 'mesa'."
+    },
+    {
+        "id": 27,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Reforzamiento de Lenguaje",
+        "eje": "Lectura",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "Si unimos las sílabas ca-mi-sa, formamos la palabra:",
+        "opciones": [
+            "cama",
+            "camisa",
+            "casa",
+            "misa"
+        ],
+        "respuesta_correcta": "camisa",
+        "retroalimentacion": "Al juntar ca + mi + sa, leemos 'camisa'."
+    },
+    {
+        "id": 28,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Reforzamiento de Lenguaje",
+        "eje": "Escritura",
+        "oa": "OA 12",
+        "dificultad": "Fácil",
+        "pregunta": "Los nombres de países, como Chile, se escriben con:",
+        "opciones": [
+            "minúscula",
+            "color rojo",
+            "mayúscula",
+            "letras grandes al final"
+        ],
+        "respuesta_correcta": "mayúscula",
+        "retroalimentacion": "Chile es un sustantivo propio y los sustantivos propios empiezan con mayúscula."
+    },
+    {
+        "id": 29,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Reforzamiento de Lenguaje",
+        "eje": "Lectura",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Cuál de estas palabras es aguda?",
+        "opciones": [
+            "reloj",
+            "mesa",
+            "lápiz",
+            "cámara"
+        ],
+        "respuesta_correcta": "reloj",
+        "retroalimentacion": "Las palabras agudas cargan la voz en la última sílaba, como re-LOJ."
+    },
+    {
+        "id": 30,
+        "asignatura": "Lenguaje",
+        "modulo_eduhome": "Reforzamiento de Lenguaje",
+        "eje": "Escritura",
+        "oa": "OA 12",
+        "dificultad": "Difícil",
+        "pregunta": "¿En qué oración se usa bien la coma?",
+        "opciones": [
+            "Compré, manzanas, peras, y plátanos",
+            "Compré manzanas, peras y plátanos.",
+            "Compré manzanas peras y, plátanos.",
+            "Compré manzanas, peras, y, plátanos."
+        ],
+        "respuesta_correcta": "Compré manzanas, peras y plátanos.",
+        "retroalimentacion": "La coma se usa para separar elementos de una enumeración, pero no antes de la 'y' final."
+    },
+    {
+        "id": 31,
         "asignatura": "Matemática",
         "modulo_eduhome": "Matemática",
         "eje": "Números y Operaciones",
@@ -82,10 +524,10 @@
             "15"
         ],
         "respuesta_correcta": "13",
-        "retroalimentacion": "Si a 8 le sumas 2 llegas a 10, y te faltan 3 más, así que 10 + 3 = 13."
+        "retroalimentacion": "8 más 2 es 10, y te faltan 3 más, así que 10 + 3 = 13."
     },
     {
-        "id": 6,
+        "id": 32,
         "asignatura": "Matemática",
         "modulo_eduhome": "Matemática",
         "eje": "Geometría",
@@ -102,7 +544,143 @@
         "retroalimentacion": "La palabra 'tri' significa tres, por lo que un triángulo es una figura de 3 lados."
     },
     {
-        "id": 7,
+        "id": 33,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 1",
+        "dificultad": "Media",
+        "pregunta": "¿Qué número viene después del 199?",
+        "opciones": [
+            "100",
+            "200",
+            "198",
+            "201"
+        ],
+        "respuesta_correcta": "200",
+        "retroalimentacion": "Después de contar hasta el 99, pasamos a la siguiente centena, que es el 200."
+    },
+    {
+        "id": 34,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Matemática",
+        "eje": "Medición",
+        "oa": "OA 19",
+        "dificultad": "Fácil",
+        "pregunta": "Si el reloj pequeño marca las 3 y el reloj grande marca las 12, ¿qué hora es?",
+        "opciones": [
+            "Las 12",
+            "Las 3 en punto",
+            "Las 3 y media",
+            "Las 4"
+        ],
+        "respuesta_correcta": "Las 3 en punto",
+        "retroalimentacion": "La manecilla pequeña indica la hora y la grande en el 12 indica que son 'en punto'."
+    },
+    {
+        "id": 35,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 9",
+        "dificultad": "Difícil",
+        "pregunta": "¿Cuál es la mitad de 10?",
+        "opciones": [
+            "2",
+            "4",
+            "5",
+            "8"
+        ],
+        "respuesta_correcta": "5",
+        "retroalimentacion": "Si tienes 10 dulces y los divides en 2 partes iguales, cada parte tiene 5 dulces."
+    },
+    {
+        "id": 36,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cuánto es 15 menos 5?",
+        "opciones": [
+            "5",
+            "10",
+            "20",
+            "0"
+        ],
+        "respuesta_correcta": "10",
+        "retroalimentacion": "Si a 15 le quitas 5, te quedas con 10."
+    },
+    {
+        "id": 37,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 8",
+        "dificultad": "Media",
+        "pregunta": "¿Cuánto es 3 veces 4? (3 x 4)",
+        "opciones": [
+            "7",
+            "10",
+            "12",
+            "16"
+        ],
+        "respuesta_correcta": "12",
+        "retroalimentacion": "Es lo mismo que sumar 4 + 4 + 4, que es igual a 12."
+    },
+    {
+        "id": 38,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Matemática",
+        "eje": "Geometría",
+        "oa": "OA 15",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué figura tiene 4 lados iguales?",
+        "opciones": [
+            "Círculo",
+            "Triángulo",
+            "Rectángulo",
+            "Cuadrado"
+        ],
+        "respuesta_correcta": "Cuadrado",
+        "retroalimentacion": "El cuadrado es una figura geométrica de cuatro lados exactamente iguales."
+    },
+    {
+        "id": 39,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Matemática",
+        "eje": "Medición",
+        "oa": "OA 21",
+        "dificultad": "Media",
+        "pregunta": "¿Con qué instrumento mides tu peso?",
+        "opciones": [
+            "Una regla",
+            "Un reloj",
+            "Una balanza",
+            "Un termómetro"
+        ],
+        "respuesta_correcta": "Una balanza",
+        "retroalimentacion": "La balanza o pesa nos permite saber cuántos kilos pesa una persona o un objeto."
+    },
+    {
+        "id": 40,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 5",
+        "dificultad": "Difícil",
+        "pregunta": "Tengo 5 monedas de $10 y 2 monedas de $100. ¿Cuánto dinero tengo?",
+        "opciones": [
+            "$150",
+            "$250",
+            "$105",
+            "$52"
+        ],
+        "respuesta_correcta": "$250",
+        "retroalimentacion": "2 de $100 son $200. Y 5 de $10 son $50. Al sumar $200 + $50 da $250."
+    },
+    {
+        "id": 41,
         "asignatura": "Matemática",
         "modulo_eduhome": "Reforzamiento de Matemática",
         "eje": "Números y Operaciones",
@@ -119,7 +697,160 @@
         "retroalimentacion": "Puedes sumar 4 + 4 + 4 o multiplicar 3 x 4, lo que da 12 manzanas."
     },
     {
-        "id": 8,
+        "id": 42,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Reforzamiento de Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cuánto es 10 - 4?",
+        "opciones": [
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "respuesta_correcta": "6",
+        "retroalimentacion": "Si a 10 le quitas 4, te quedan 6."
+    },
+    {
+        "id": 43,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Reforzamiento de Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "¿Cuál es el resultado de 15 + 15?",
+        "opciones": [
+            "20",
+            "25",
+            "30",
+            "35"
+        ],
+        "respuesta_correcta": "30",
+        "retroalimentacion": "10 + 10 son 20, y 5 + 5 son 10. Sumando ambos da 30."
+    },
+    {
+        "id": 44,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Reforzamiento de Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 8",
+        "dificultad": "Media",
+        "pregunta": "Calcula: 2 x 5",
+        "opciones": [
+            "5",
+            "7",
+            "10",
+            "12"
+        ],
+        "respuesta_correcta": "10",
+        "retroalimentacion": "Sumar 5 dos veces da como resultado 10."
+    },
+    {
+        "id": 45,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Reforzamiento de Matemática",
+        "eje": "Patrones y Álgebra",
+        "oa": "OA 12",
+        "dificultad": "Difícil",
+        "pregunta": "Completa la secuencia: 2, 4, 6, 8, ___",
+        "opciones": [
+            "9",
+            "10",
+            "12",
+            "14"
+        ],
+        "respuesta_correcta": "10",
+        "retroalimentacion": "La secuencia avanza de 2 en 2, sumando 2 al último número: 8 + 2 = 10."
+    },
+    {
+        "id": 46,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Reforzamiento de Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cuánto es 20 + 5?",
+        "opciones": [
+            "15",
+            "25",
+            "30",
+            "205"
+        ],
+        "respuesta_correcta": "25",
+        "retroalimentacion": "Al sumar 20 más 5 obtienes 25."
+    },
+    {
+        "id": 47,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Reforzamiento de Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "Si tenía 30 dulces y me comí 10, ¿cuántos me quedan?",
+        "opciones": [
+            "10",
+            "20",
+            "40",
+            "15"
+        ],
+        "respuesta_correcta": "20",
+        "retroalimentacion": "30 menos 10 es igual a 20."
+    },
+    {
+        "id": 48,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Reforzamiento de Matemática",
+        "eje": "Números y Operaciones",
+        "oa": "OA 8",
+        "dificultad": "Media",
+        "pregunta": "¿Cuánto es 5 veces 2? (5 x 2)",
+        "opciones": [
+            "7",
+            "10",
+            "20",
+            "15"
+        ],
+        "respuesta_correcta": "10",
+        "retroalimentacion": "Contar de a 2, cinco veces: 2, 4, 6, 8, 10."
+    },
+    {
+        "id": 49,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Reforzamiento de Matemática",
+        "eje": "Geometría",
+        "oa": "OA 15",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué figura no tiene esquinas ni lados rectos?",
+        "opciones": [
+            "Cuadrado",
+            "Triángulo",
+            "Círculo",
+            "Rectángulo"
+        ],
+        "respuesta_correcta": "Círculo",
+        "retroalimentacion": "El círculo es una figura redonda y curva, sin esquinas ni lados rectos."
+    },
+    {
+        "id": 50,
+        "asignatura": "Matemática",
+        "modulo_eduhome": "Reforzamiento de Matemática",
+        "eje": "Patrones y Álgebra",
+        "oa": "OA 12",
+        "dificultad": "Difícil",
+        "pregunta": "Completa: 10, 20, 30, ___",
+        "opciones": [
+            "35",
+            "40",
+            "50",
+            "100"
+        ],
+        "respuesta_correcta": "40",
+        "retroalimentacion": "La secuencia avanza sumando de a 10 cada vez."
+    },
+    {
+        "id": 51,
         "asignatura": "Ciencias e Historia",
         "modulo_eduhome": "Ciencias Naturales",
         "eje": "Ciencias de la Vida",
@@ -133,10 +864,10 @@
             "Solo tierra"
         ],
         "respuesta_correcta": "Agua, luz solar y dióxido de carbono",
-        "retroalimentacion": "Las plantas fabrican su propio alimento usando la luz del sol, el agua que absorben y el aire."
+        "retroalimentacion": "Las plantas fabrican su propio alimento usando la luz, agua y aire."
     },
     {
-        "id": 9,
+        "id": 52,
         "asignatura": "Ciencias e Historia",
         "modulo_eduhome": "Ciencias Naturales",
         "eje": "Ciencias de la Tierra y el Universo",
@@ -153,7 +884,143 @@
         "retroalimentacion": "Vivimos en la Tierra, el tercer planeta desde el Sol."
     },
     {
-        "id": 10,
+        "id": 53,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Ciencias Naturales",
+        "eje": "Ciencias Físicas",
+        "oa": "OA 8",
+        "dificultad": "Media",
+        "pregunta": "¿Cuál de estos materiales es transparente?",
+        "opciones": [
+            "Madera",
+            "Metal",
+            "Vidrio",
+            "Piedra"
+        ],
+        "respuesta_correcta": "Vidrio",
+        "retroalimentacion": "El vidrio permite que la luz pase a través de él."
+    },
+    {
+        "id": 54,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Ciencias Naturales",
+        "eje": "Ciencias de la Vida",
+        "oa": "OA 6",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué animal es un mamífero?",
+        "opciones": [
+            "Pez",
+            "Gallina",
+            "Perro",
+            "Mosca"
+        ],
+        "respuesta_correcta": "Perro",
+        "retroalimentacion": "Los mamíferos, como los perros, nacen del vientre de la madre y toman leche."
+    },
+    {
+        "id": 55,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Ciencias Naturales",
+        "eje": "Ciencias Físicas",
+        "oa": "OA 9",
+        "dificultad": "Difícil",
+        "pregunta": "¿Qué pasa si calentamos mucho el hielo?",
+        "opciones": [
+            "Se vuelve más duro",
+            "Se derrite y se vuelve líquido",
+            "Desaparece",
+            "Se convierte en piedra"
+        ],
+        "respuesta_correcta": "Se derrite y se vuelve líquido",
+        "retroalimentacion": "El calor hace que el agua en estado sólido (hielo) pase a estado líquido."
+    },
+    {
+        "id": 56,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Ciencias Naturales",
+        "eje": "Ciencias de la Vida",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "¿Qué parte de la planta absorbe el agua?",
+        "opciones": [
+            "Las hojas",
+            "Las flores",
+            "La raíz",
+            "El tallo"
+        ],
+        "respuesta_correcta": "La raíz",
+        "retroalimentacion": "La raíz absorbe el agua y los minerales del suelo para alimentar a la planta."
+    },
+    {
+        "id": 57,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Ciencias Naturales",
+        "eje": "Ciencias de la Tierra y el Universo",
+        "oa": "OA 12",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué astro nos da luz y calor durante el día?",
+        "opciones": [
+            "La Luna",
+            "Las estrellas",
+            "El Sol",
+            "Marte"
+        ],
+        "respuesta_correcta": "El Sol",
+        "retroalimentacion": "El Sol es la estrella más cercana a nosotros y nos ilumina de día."
+    },
+    {
+        "id": 58,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Ciencias Naturales",
+        "eje": "Ciencias Físicas",
+        "oa": "OA 8",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué material es más suave?",
+        "opciones": [
+            "Algodón",
+            "Piedra",
+            "Madera",
+            "Hierro"
+        ],
+        "respuesta_correcta": "Algodón",
+        "retroalimentacion": "El algodón tiene una textura muy suave, a diferencia de los otros materiales duros."
+    },
+    {
+        "id": 59,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Ciencias Naturales",
+        "eje": "Ciencias de la Vida",
+        "oa": "OA 6",
+        "dificultad": "Media",
+        "pregunta": "¿Qué animales nacen por huevos?",
+        "opciones": [
+            "Ovíparos",
+            "Mamíferos",
+            "Herbívoros",
+            "Carnívoros"
+        ],
+        "respuesta_correcta": "Ovíparos",
+        "retroalimentacion": "Los animales ovíparos, como las aves y los reptiles, nacen a partir de huevos."
+    },
+    {
+        "id": 60,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Ciencias Naturales",
+        "eje": "Ciencias de la Vida",
+        "oa": "OA 7",
+        "dificultad": "Difícil",
+        "pregunta": "¿Cómo respiran los peces bajo el agua?",
+        "opciones": [
+            "Por pulmones",
+            "Por branquias",
+            "Por la piel",
+            "No respiran"
+        ],
+        "respuesta_correcta": "Por branquias",
+        "retroalimentacion": "Los peces utilizan las branquias para extraer el oxígeno disuelto en el agua."
+    },
+    {
+        "id": 61,
         "asignatura": "Ciencias e Historia",
         "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
         "eje": "Geografía",
@@ -170,7 +1037,160 @@
         "retroalimentacion": "Chile está ubicado en América del Sur."
     },
     {
-        "id": 11,
+        "id": 62,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
+        "eje": "Geografía",
+        "oa": "OA 8",
+        "dificultad": "Media",
+        "pregunta": "¿Cuál es la capital de Chile?",
+        "opciones": [
+            "Valparaíso",
+            "Concepción",
+            "Santiago",
+            "Antofagasta"
+        ],
+        "respuesta_correcta": "Santiago",
+        "retroalimentacion": "Santiago es la ciudad capital de Chile."
+    },
+    {
+        "id": 63,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
+        "eje": "Historia",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Quiénes vivían en Chile antes de la llegada de los españoles?",
+        "opciones": [
+            "Solo dinosaurios",
+            "Los pueblos originarios",
+            "Nadie",
+            "Los ingleses"
+        ],
+        "respuesta_correcta": "Los pueblos originarios",
+        "retroalimentacion": "Los pueblos originarios, como los Mapuches y Aymaras, habitaban este territorio."
+    },
+    {
+        "id": 64,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
+        "eje": "Geografía",
+        "oa": "OA 7",
+        "dificultad": "Media",
+        "pregunta": "¿Qué gran océano baña las costas de Chile?",
+        "opciones": [
+            "Océano Atlántico",
+            "Océano Índico",
+            "Océano Pacífico",
+            "Océano Ártico"
+        ],
+        "respuesta_correcta": "Océano Pacífico",
+        "retroalimentacion": "Todo el largo de Chile limita al oeste con el Océano Pacífico."
+    },
+    {
+        "id": 65,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
+        "eje": "Formación Ciudadana",
+        "oa": "OA 11",
+        "dificultad": "Difícil",
+        "pregunta": "¿Por qué son importantes las normas de convivencia en la sala de clases?",
+        "opciones": [
+            "Para tener más recreos",
+            "Para que todos se respeten y aprendan mejor",
+            "Para pintar las paredes",
+            "Para no hacer tareas"
+        ],
+        "respuesta_correcta": "Para que todos se respeten y aprendan mejor",
+        "retroalimentacion": "Las normas nos ayudan a mantener el respeto y el orden."
+    },
+    {
+        "id": 66,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
+        "eje": "Geografía",
+        "oa": "OA 9",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cómo es la forma de Chile en el mapa?",
+        "opciones": [
+            "Cuadrado",
+            "Redondo",
+            "Largo y angosto",
+            "Corto y ancho"
+        ],
+        "respuesta_correcta": "Largo y angosto",
+        "retroalimentacion": "Chile se caracteriza por ser una franja de tierra larga y angosta."
+    },
+    {
+        "id": 67,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
+        "eje": "Historia",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Qué pueblo originario habita principalmente en la zona sur de Chile?",
+        "opciones": [
+            "Mapuche",
+            "Aymara",
+            "Rapa Nui",
+            "Diaguita"
+        ],
+        "respuesta_correcta": "Mapuche",
+        "retroalimentacion": "El pueblo Mapuche es originario y muy importante en la zona sur de nuestro país."
+    },
+    {
+        "id": 68,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
+        "eje": "Formación Ciudadana",
+        "oa": "OA 12",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué debemos hacer si vemos a un abuelito tratando de cruzar la calle?",
+        "opciones": [
+            "Correr a su lado riendo",
+            "Ignorarlo",
+            "Ayudarlo si es posible y respetarlo",
+            "Cruzar antes que él"
+        ],
+        "respuesta_correcta": "Ayudarlo si es posible y respetarlo",
+        "retroalimentacion": "Es importante respetar y ayudar a las personas mayores."
+    },
+    {
+        "id": 69,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
+        "eje": "Geografía",
+        "oa": "OA 8",
+        "dificultad": "Difícil",
+        "pregunta": "¿Cuál es la cordillera que recorre todo Chile?",
+        "opciones": [
+            "Cordillera de los Alpes",
+            "Cordillera del Himalaya",
+            "Cordillera de los Andes",
+            "Cordillera de la Costa"
+        ],
+        "respuesta_correcta": "Cordillera de los Andes",
+        "retroalimentacion": "La Cordillera de los Andes es la gran cadena montañosa que acompaña a Chile en el este."
+    },
+    {
+        "id": 70,
+        "asignatura": "Ciencias e Historia",
+        "modulo_eduhome": "Historia, Geografía y Ciencias Sociales",
+        "eje": "Historia",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "¿Qué comida es tradicional y típica de Chile?",
+        "opciones": [
+            "Sushi",
+            "Empanada de pino",
+            "Hamburguesa",
+            "Tacos"
+        ],
+        "respuesta_correcta": "Empanada de pino",
+        "retroalimentacion": "Las empanadas de pino son una de las comidas típicas más conocidas de Chile."
+    },
+    {
+        "id": 71,
         "asignatura": "Inglés",
         "modulo_eduhome": "English",
         "eje": "Vocabulario",
@@ -184,10 +1204,163 @@
             "Yellow"
         ],
         "respuesta_correcta": "Red",
-        "retroalimentacion": "El color rojo en inglés se dice 'Red'."
+        "retroalimentacion": "El color rojo se dice 'Red'."
     },
     {
-        "id": 12,
+        "id": 72,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English",
+        "eje": "Vocabulario",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cómo se dice 'Hola' en inglés?",
+        "opciones": [
+            "Goodbye",
+            "Hello",
+            "Please",
+            "Thank you"
+        ],
+        "respuesta_correcta": "Hello",
+        "retroalimentacion": "Hola en inglés es 'Hello'."
+    },
+    {
+        "id": 73,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English",
+        "eje": "Gramática",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "¿Qué significa 'My name is...'?",
+        "opciones": [
+            "Me gusta...",
+            "Yo tengo...",
+            "Mi nombre es...",
+            "Yo soy..."
+        ],
+        "respuesta_correcta": "Mi nombre es...",
+        "retroalimentacion": "Esta frase se usa para presentarse."
+    },
+    {
+        "id": 74,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English",
+        "eje": "Vocabulario",
+        "oa": "OA 1",
+        "dificultad": "Media",
+        "pregunta": "¿Cuál de estos es un número en inglés?",
+        "opciones": [
+            "Apple",
+            "Book",
+            "Seven",
+            "Cat"
+        ],
+        "respuesta_correcta": "Seven",
+        "retroalimentacion": "Seven es el número 7."
+    },
+    {
+        "id": 75,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English",
+        "eje": "Vocabulario",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué animal es 'Cat'?",
+        "opciones": [
+            "Perro",
+            "Gato",
+            "Pájaro",
+            "Pez"
+        ],
+        "respuesta_correcta": "Gato",
+        "retroalimentacion": "Cat significa Gato."
+    },
+    {
+        "id": 76,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English",
+        "eje": "Vocabulario",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué significa 'Dog'?",
+        "opciones": [
+            "Caballo",
+            "Cerdo",
+            "Perro",
+            "Gato"
+        ],
+        "respuesta_correcta": "Perro",
+        "retroalimentacion": "Dog es perro en inglés."
+    },
+    {
+        "id": 77,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English",
+        "eje": "Vocabulario",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Cómo decimos 'Adiós'?",
+        "opciones": [
+            "Hello",
+            "Goodbye",
+            "Please",
+            "Sorry"
+        ],
+        "respuesta_correcta": "Goodbye",
+        "retroalimentacion": "Goodbye significa Adiós."
+    },
+    {
+        "id": 78,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English",
+        "eje": "Vocabulario",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué color es 'Yellow'?",
+        "opciones": [
+            "Amarillo",
+            "Verde",
+            "Rojo",
+            "Azul"
+        ],
+        "respuesta_correcta": "Amarillo",
+        "retroalimentacion": "Yellow es el color amarillo."
+    },
+    {
+        "id": 79,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English",
+        "eje": "Vocabulario",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "¿Cómo se dice 'Gracias'?",
+        "opciones": [
+            "Please",
+            "Hello",
+            "Thank you",
+            "Sorry"
+        ],
+        "respuesta_correcta": "Thank you",
+        "retroalimentacion": "Thank you es la manera de dar las gracias en inglés."
+    },
+    {
+        "id": 80,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English",
+        "eje": "Vocabulario",
+        "oa": "OA 1",
+        "dificultad": "Difícil",
+        "pregunta": "¿Cuál de estas palabras es un objeto del colegio?",
+        "opciones": [
+            "Pencil",
+            "Dog",
+            "Apple",
+            "Car"
+        ],
+        "respuesta_correcta": "Pencil",
+        "retroalimentacion": "Pencil significa lápiz."
+    },
+    {
+        "id": 81,
         "asignatura": "Inglés",
         "modulo_eduhome": "English With Fun",
         "eje": "Vocabulario",
@@ -204,7 +1377,160 @@
         "retroalimentacion": "'Dog' es la palabra en inglés para 'Perro'."
     },
     {
-        "id": 13,
+        "id": 82,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English With Fun",
+        "eje": "Vocabulario",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué color es 'Blue'?",
+        "opciones": [
+            "Rojo",
+            "Azul",
+            "Amarillo",
+            "Verde"
+        ],
+        "respuesta_correcta": "Azul",
+        "retroalimentacion": "Blue es el color Azul."
+    },
+    {
+        "id": 83,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English With Fun",
+        "eje": "Vocabulario",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "¿Qué parte del cuerpo es 'Head'?",
+        "opciones": [
+            "Mano",
+            "Pie",
+            "Cabeza",
+            "Ojo"
+        ],
+        "respuesta_correcta": "Cabeza",
+        "retroalimentacion": "Head significa Cabeza."
+    },
+    {
+        "id": 84,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English With Fun",
+        "eje": "Vocabulario",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Qué comida es 'Apple'?",
+        "opciones": [
+            "Plátano",
+            "Manzana",
+            "Naranja",
+            "Uva"
+        ],
+        "respuesta_correcta": "Manzana",
+        "retroalimentacion": "Apple es una Manzana."
+    },
+    {
+        "id": 85,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English With Fun",
+        "eje": "Expresión",
+        "oa": "OA 4",
+        "dificultad": "Difícil",
+        "pregunta": "Si estás feliz, puedes decir: 'I am...'",
+        "opciones": [
+            "Sad",
+            "Angry",
+            "Happy",
+            "Tired"
+        ],
+        "respuesta_correcta": "Happy",
+        "retroalimentacion": "Happy significa Feliz."
+    },
+    {
+        "id": 86,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English With Fun",
+        "eje": "Vocabulario",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué animal es 'Bird'?",
+        "opciones": [
+            "Oso",
+            "Pez",
+            "Pájaro",
+            "Serpiente"
+        ],
+        "respuesta_correcta": "Pájaro",
+        "retroalimentacion": "Bird es Pájaro en inglés."
+    },
+    {
+        "id": 87,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English With Fun",
+        "eje": "Vocabulario",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Cómo se dice 'Sol' en inglés?",
+        "opciones": [
+            "Moon",
+            "Star",
+            "Cloud",
+            "Sun"
+        ],
+        "respuesta_correcta": "Sun",
+        "retroalimentacion": "Sun significa Sol."
+    },
+    {
+        "id": 88,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English With Fun",
+        "eje": "Expresión",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "Para decir 'Por favor', dices:",
+        "opciones": [
+            "Sorry",
+            "Thank you",
+            "Please",
+            "Hello"
+        ],
+        "respuesta_correcta": "Please",
+        "retroalimentacion": "Please es Por favor."
+    },
+    {
+        "id": 89,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English With Fun",
+        "eje": "Vocabulario",
+        "oa": "OA 1",
+        "dificultad": "Media",
+        "pregunta": "¿Qué color es 'Green'?",
+        "opciones": [
+            "Rojo",
+            "Verde",
+            "Negro",
+            "Blanco"
+        ],
+        "respuesta_correcta": "Verde",
+        "retroalimentacion": "Green es el color Verde."
+    },
+    {
+        "id": 90,
+        "asignatura": "Inglés",
+        "modulo_eduhome": "English With Fun",
+        "eje": "Vocabulario",
+        "oa": "OA 3",
+        "dificultad": "Difícil",
+        "pregunta": "¿Qué significa 'Jump'?",
+        "opciones": [
+            "Correr",
+            "Dormir",
+            "Saltar",
+            "Cantar"
+        ],
+        "respuesta_correcta": "Saltar",
+        "retroalimentacion": "Jump es la acción de Saltar."
+    },
+    {
+        "id": 91,
         "asignatura": "Artes y Creatividad",
         "modulo_eduhome": "Educación Artística",
         "eje": "Creación",
@@ -218,10 +1544,163 @@
             "Rosa, Celeste, Lila"
         ],
         "respuesta_correcta": "Rojo, Azul, Amarillo",
-        "retroalimentacion": "Los colores primarios son el rojo, el azul y el amarillo; a partir de ellos se pueden crear los demás colores."
+        "retroalimentacion": "Los colores primarios son el rojo, el azul y el amarillo."
     },
     {
-        "id": 14,
+        "id": 92,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Educación Artística",
+        "eje": "Creación",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Qué color obtienes si mezclas rojo y amarillo?",
+        "opciones": [
+            "Verde",
+            "Naranja",
+            "Morado",
+            "Café"
+        ],
+        "respuesta_correcta": "Naranja",
+        "retroalimentacion": "La mezcla de rojo y amarillo crea el color naranja."
+    },
+    {
+        "id": 93,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Educación Artística",
+        "eje": "Materiales",
+        "oa": "OA 3",
+        "dificultad": "Fácil",
+        "pregunta": "¿Con qué material puedes modelar figuras 3D?",
+        "opciones": [
+            "Agua",
+            "Lápiz",
+            "Greda o Plasticina",
+            "Papel"
+        ],
+        "respuesta_correcta": "Greda o Plasticina",
+        "retroalimentacion": "La plasticina nos permite crear objetos con volumen."
+    },
+    {
+        "id": 94,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Educación Artística",
+        "eje": "Apreciación",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "¿Qué hace un escultor?",
+        "opciones": [
+            "Pinta cuadros",
+            "Canta",
+            "Crea estatuas y figuras",
+            "Escribe poemas"
+        ],
+        "respuesta_correcta": "Crea estatuas y figuras",
+        "retroalimentacion": "Un escultor moldea o talla materiales para crear arte."
+    },
+    {
+        "id": 95,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Educación Artística",
+        "eje": "Creación",
+        "oa": "OA 1",
+        "dificultad": "Difícil",
+        "pregunta": "¿Qué son las texturas visuales?",
+        "opciones": [
+            "Cosas que hacen ruido",
+            "Dibujos que parecen tener volumen o rugosidad pero son planos",
+            "La música de un video",
+            "El olor de la pintura"
+        ],
+        "respuesta_correcta": "Dibujos que parecen tener volumen o rugosidad pero son planos",
+        "retroalimentacion": "Las texturas visuales engañan al ojo para que parezca que se pueden sentir."
+    },
+    {
+        "id": 96,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Educación Artística",
+        "eje": "Creación",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué color obtienes al mezclar Azul y Amarillo?",
+        "opciones": [
+            "Morado",
+            "Verde",
+            "Rojo",
+            "Naranja"
+        ],
+        "respuesta_correcta": "Verde",
+        "retroalimentacion": "Al mezclar azul y amarillo, se crea el color verde."
+    },
+    {
+        "id": 97,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Educación Artística",
+        "eje": "Herramientas",
+        "oa": "OA 3",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué usamos comúnmente para pintar con témpera?",
+        "opciones": [
+            "Un tenedor",
+            "Un pincel",
+            "Una tijera",
+            "Una regla"
+        ],
+        "respuesta_correcta": "Un pincel",
+        "retroalimentacion": "El pincel nos permite esparcir la pintura sobre el papel."
+    },
+    {
+        "id": 98,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Educación Artística",
+        "eje": "Apreciación",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "¿Qué es un retrato?",
+        "opciones": [
+            "Un dibujo de un animal",
+            "Un dibujo o pintura de la cara de una persona",
+            "Una foto de un paisaje",
+            "Una escultura de piedra"
+        ],
+        "respuesta_correcta": "Un dibujo o pintura de la cara de una persona",
+        "retroalimentacion": "El retrato es la representación gráfica de una persona."
+    },
+    {
+        "id": 99,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Educación Artística",
+        "eje": "Creación",
+        "oa": "OA 1",
+        "dificultad": "Media",
+        "pregunta": "¿A qué familia de colores pertenecen el Azul, el Morado y el Verde?",
+        "opciones": [
+            "Colores Cálidos",
+            "Colores Fríos",
+            "Colores Oscuros",
+            "Colores Brillantes"
+        ],
+        "respuesta_correcta": "Colores Fríos",
+        "retroalimentacion": "Estos colores nos recuerdan al agua o al hielo, por eso son colores fríos."
+    },
+    {
+        "id": 100,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Educación Artística",
+        "eje": "Técnicas",
+        "oa": "OA 3",
+        "dificultad": "Difícil",
+        "pregunta": "¿En qué consiste la técnica del Collage?",
+        "opciones": [
+            "En pintar todo de negro",
+            "En pegar distintos materiales y recortes en una hoja",
+            "En cantar una canción",
+            "En modelar con greda"
+        ],
+        "respuesta_correcta": "En pegar distintos materiales y recortes en una hoja",
+        "retroalimentacion": "El collage es una técnica de arte que une recortes de papel, telas, etc."
+    },
+    {
+        "id": 101,
         "asignatura": "Artes y Creatividad",
         "modulo_eduhome": "Teoría Musical",
         "eje": "Apreciación",
@@ -235,10 +1714,163 @@
             "Flauta"
         ],
         "respuesta_correcta": "Piano",
-        "retroalimentacion": "El piano es un instrumento de teclado que tiene teclas blancas y negras para tocar diferentes notas."
+        "retroalimentacion": "El piano tiene un teclado con teclas blancas y negras."
     },
     {
-        "id": 15,
+        "id": 102,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Teoría Musical",
+        "eje": "Lenguaje Musical",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cuántas líneas tiene un pentagrama?",
+        "opciones": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "respuesta_correcta": "5",
+        "retroalimentacion": "Penta significa cinco, así que el pentagrama tiene 5 líneas."
+    },
+    {
+        "id": 103,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Teoría Musical",
+        "eje": "Lenguaje Musical",
+        "oa": "OA 1",
+        "dificultad": "Media",
+        "pregunta": "¿Cuál de estas es una nota musical?",
+        "opciones": [
+            "Sol",
+            "Luna",
+            "Estrella",
+            "Nube"
+        ],
+        "respuesta_correcta": "Sol",
+        "retroalimentacion": "Las notas son Do, Re, Mi, Fa, Sol, La, Si."
+    },
+    {
+        "id": 104,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Teoría Musical",
+        "eje": "Lenguaje Musical",
+        "oa": "OA 2",
+        "dificultad": "Difícil",
+        "pregunta": "¿Qué símbolo se pone al principio del pentagrama?",
+        "opciones": [
+            "Una letra A",
+            "La llave de Sol",
+            "Un número 1",
+            "Un punto"
+        ],
+        "respuesta_correcta": "La llave de Sol",
+        "retroalimentacion": "La llave de Sol indica cómo se leerán las notas."
+    },
+    {
+        "id": 105,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Teoría Musical",
+        "eje": "Cualidades del Sonido",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "¿Qué cualidad diferencia un sonido fuerte de uno suave?",
+        "opciones": [
+            "La altura",
+            "La intensidad (volumen)",
+            "La duración",
+            "El timbre"
+        ],
+        "respuesta_correcta": "La intensidad (volumen)",
+        "retroalimentacion": "La intensidad nos dice si el sonido es muy fuerte o muy suavecito."
+    },
+    {
+        "id": 106,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Teoría Musical",
+        "eje": "Instrumentos",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué instrumento se toca soplando?",
+        "opciones": [
+            "La flauta",
+            "El piano",
+            "La guitarra",
+            "El tambor"
+        ],
+        "respuesta_correcta": "La flauta",
+        "retroalimentacion": "La flauta es un instrumento de viento y se toca soplando."
+    },
+    {
+        "id": 107,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Teoría Musical",
+        "eje": "Lenguaje Musical",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cuál es la primera nota musical de la escala básica?",
+        "opciones": [
+            "Sol",
+            "Re",
+            "Do",
+            "Fa"
+        ],
+        "respuesta_correcta": "Do",
+        "retroalimentacion": "La escala musical comienza por lo general en 'Do'."
+    },
+    {
+        "id": 108,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Teoría Musical",
+        "eje": "Instrumentos",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "La guitarra pertenece a la familia de los instrumentos de...",
+        "opciones": [
+            "Percusión",
+            "Viento",
+            "Cuerda",
+            "Eléctricos"
+        ],
+        "respuesta_correcta": "Cuerda",
+        "retroalimentacion": "La guitarra produce sonido al hacer vibrar sus cuerdas."
+    },
+    {
+        "id": 109,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Teoría Musical",
+        "eje": "Cualidades del Sonido",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "Si un sonido dura mucho tiempo o poquito tiempo, hablamos de su...",
+        "opciones": [
+            "Intensidad",
+            "Altura",
+            "Duración",
+            "Timbre"
+        ],
+        "respuesta_correcta": "Duración",
+        "retroalimentacion": "La duración determina si el sonido es largo o corto."
+    },
+    {
+        "id": 110,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Teoría Musical",
+        "eje": "Lenguaje Musical",
+        "oa": "OA 2",
+        "dificultad": "Difícil",
+        "pregunta": "¿Para qué sirven las figuras musicales (como la Negra, la Blanca)?",
+        "opciones": [
+            "Para indicar qué instrumento tocar",
+            "Para marcar la duración del sonido en el tiempo",
+            "Para adornar el papel",
+            "Para saber si es fuerte o suave"
+        ],
+        "respuesta_correcta": "Para marcar la duración del sonido en el tiempo",
+        "retroalimentacion": "Las figuras como la Negra o Blanca nos dicen cuánto tiempo debe sonar una nota."
+    },
+    {
+        "id": 111,
         "asignatura": "Artes y Creatividad",
         "modulo_eduhome": "Interpretación Musical",
         "eje": "Apreciación",
@@ -252,10 +1884,163 @@
             "Los hombros"
         ],
         "respuesta_correcta": "Las manos",
-        "retroalimentacion": "¡Usamos las manos para aplaudir y seguir el ritmo!"
+        "retroalimentacion": "Usamos las manos para aplaudir."
     },
     {
-        "id": 16,
+        "id": 112,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Interpretación Musical",
+        "eje": "Canto",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué usamos para cantar?",
+        "opciones": [
+            "Nuestra voz",
+            "Los pies",
+            "Los ojos",
+            "Las orejas"
+        ],
+        "respuesta_correcta": "Nuestra voz",
+        "retroalimentacion": "La voz es nuestro instrumento musical natural."
+    },
+    {
+        "id": 113,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Interpretación Musical",
+        "eje": "Interpretación",
+        "oa": "OA 5",
+        "dificultad": "Media",
+        "pregunta": "¿Qué es un coro?",
+        "opciones": [
+            "Un solo cantante",
+            "Un grupo de personas cantando juntas",
+            "Una guitarra sola",
+            "Un baile"
+        ],
+        "respuesta_correcta": "Un grupo de personas cantando juntas",
+        "retroalimentacion": "Un coro está formado por muchas voces cantando a la vez."
+    },
+    {
+        "id": 114,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Interpretación Musical",
+        "eje": "Instrumentos",
+        "oa": "OA 6",
+        "dificultad": "Media",
+        "pregunta": "¿Cómo se toca un tambor?",
+        "opciones": [
+            "Soplando",
+            "Golpeándolo o percutiendo",
+            "Frotando cuerdas",
+            "Apretando teclas"
+        ],
+        "respuesta_correcta": "Golpeándolo o percutiendo",
+        "retroalimentacion": "El tambor es un instrumento de percusión."
+    },
+    {
+        "id": 115,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Interpretación Musical",
+        "eje": "Interpretación",
+        "oa": "OA 5",
+        "dificultad": "Difícil",
+        "pregunta": "Cuando sigues el 'pulso' de una canción, estás...",
+        "opciones": [
+            "Durmiendo",
+            "Marcando el latido constante de la música",
+            "Cantando muy alto",
+            "Tocando la flauta"
+        ],
+        "respuesta_correcta": "Marcando el latido constante de la música",
+        "retroalimentacion": "El pulso es como el latido del corazón de una canción."
+    },
+    {
+        "id": 116,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Interpretación Musical",
+        "eje": "Canto",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué es importante hacer antes de cantar mucho rato?",
+        "opciones": [
+            "Correr muy rápido",
+            "Comer dulces",
+            "Calentar la voz y respirar bien",
+            "Gritar fuerte"
+        ],
+        "respuesta_correcta": "Calentar la voz y respirar bien",
+        "retroalimentacion": "Calentar las cuerdas vocales protege nuestra voz para no lastimarla."
+    },
+    {
+        "id": 117,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Interpretación Musical",
+        "eje": "Interpretación",
+        "oa": "OA 5",
+        "dificultad": "Media",
+        "pregunta": "¿Qué es cantar 'a capella'?",
+        "opciones": [
+            "Cantar con una guitarra",
+            "Cantar usando solo la voz, sin ningún instrumento musical",
+            "Cantar con un piano",
+            "Bailar sin cantar"
+        ],
+        "respuesta_correcta": "Cantar usando solo la voz, sin ningún instrumento musical",
+        "retroalimentacion": "Cantar a capella es usar solo las voces de las personas sin música de fondo."
+    },
+    {
+        "id": 118,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Interpretación Musical",
+        "eje": "Ritmo",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "¿Qué instrumento nos ayuda a marcar bien el ritmo de una marcha?",
+        "opciones": [
+            "El violín",
+            "La flauta dulce",
+            "El bombo o la caja",
+            "El arpa"
+        ],
+        "respuesta_correcta": "El bombo o la caja",
+        "retroalimentacion": "Los instrumentos de percusión son los mejores para marcar ritmos constantes."
+    },
+    {
+        "id": 119,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Interpretación Musical",
+        "eje": "Canto",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "¿Cómo llamamos a la letra de una canción que se repite varias veces?",
+        "opciones": [
+            "El título",
+            "El estribillo o coro",
+            "El poema",
+            "El cuento"
+        ],
+        "respuesta_correcta": "El estribillo o coro",
+        "retroalimentacion": "El estribillo es la parte de la canción que solemos aprendernos más fácil porque se repite."
+    },
+    {
+        "id": 120,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Interpretación Musical",
+        "eje": "Interpretación",
+        "oa": "OA 6",
+        "dificultad": "Difícil",
+        "pregunta": "¿Quién es la persona encargada de guiar a una orquesta o a un coro con sus manos o una batuta?",
+        "opciones": [
+            "El cantante",
+            "El director de orquesta",
+            "El bailarín",
+            "El pintor"
+        ],
+        "respuesta_correcta": "El director de orquesta",
+        "retroalimentacion": "El director marca el tiempo y las indicaciones para que todos toquen juntos y en armonía."
+    },
+    {
+        "id": 121,
         "asignatura": "Artes y Creatividad",
         "modulo_eduhome": "Robótica",
         "eje": "Tecnología",
@@ -269,10 +2054,163 @@
             "Un cable"
         ],
         "respuesta_correcta": "Un código o programa",
-        "retroalimentacion": "Los robots siguen las instrucciones que los humanos escriben en forma de código o programas."
+        "retroalimentacion": "Los robots siguen instrucciones escritas en forma de código."
     },
     {
-        "id": 17,
+        "id": 122,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Robótica",
+        "eje": "Componentes",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Qué parte de un robot le permite moverse?",
+        "opciones": [
+            "La batería",
+            "Los sensores",
+            "Los motores y ruedas",
+            "Las luces"
+        ],
+        "respuesta_correcta": "Los motores y ruedas",
+        "retroalimentacion": "Los motores convierten la energía en movimiento para las ruedas o brazos."
+    },
+    {
+        "id": 123,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Robótica",
+        "eje": "Sensores",
+        "oa": "OA 3",
+        "dificultad": "Difícil",
+        "pregunta": "¿Cómo puede un robot 'ver' u 'oír'?",
+        "opciones": [
+            "Con ojos humanos",
+            "Adivinando",
+            "Usando sensores",
+            "Con un reloj"
+        ],
+        "respuesta_correcta": "Usando sensores",
+        "retroalimentacion": "Los sensores le dan información del entorno (luz, distancia, sonido)."
+    },
+    {
+        "id": 124,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Robótica",
+        "eje": "Conceptos",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué necesita un robot para tener energía?",
+        "opciones": [
+            "Agua",
+            "Baterías o electricidad",
+            "Comida",
+            "Sol solamente"
+        ],
+        "respuesta_correcta": "Baterías o electricidad",
+        "retroalimentacion": "Las máquinas electrónicas funcionan con energía eléctrica."
+    },
+    {
+        "id": 125,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Robótica",
+        "eje": "Programación",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "En programación, ¿qué es un 'Bug'?",
+        "opciones": [
+            "Un insecto de verdad",
+            "Un error en el código",
+            "Una función nueva",
+            "El nombre del robot"
+        ],
+        "respuesta_correcta": "Un error en el código",
+        "retroalimentacion": "Cuando el programa falla, se dice que tiene un 'bug' (error)."
+    },
+    {
+        "id": 126,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Robótica",
+        "eje": "Programación",
+        "oa": "OA 4",
+        "dificultad": "Fácil",
+        "pregunta": "¿Quién crea los programas que usan los robots?",
+        "opciones": [
+            "Los animales",
+            "Las plantas",
+            "Los humanos (programadores)",
+            "Los mismos robots"
+        ],
+        "respuesta_correcta": "Los humanos (programadores)",
+        "retroalimentacion": "Las personas escribimos los códigos para decirle a los robots qué hacer."
+    },
+    {
+        "id": 127,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Robótica",
+        "eje": "Tecnología",
+        "oa": "OA 1",
+        "dificultad": "Media",
+        "pregunta": "¿Qué es un 'Algoritmo'?",
+        "opciones": [
+            "Una marca de robot",
+            "Un tipo de motor",
+            "Una serie de pasos ordenados para resolver un problema",
+            "Un cable eléctrico"
+        ],
+        "respuesta_correcta": "Una serie de pasos ordenados para resolver un problema",
+        "retroalimentacion": "Un algoritmo es como una receta de pasos precisos para lograr algo en programación."
+    },
+    {
+        "id": 128,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Robótica",
+        "eje": "Sensores",
+        "oa": "OA 3",
+        "dificultad": "Media",
+        "pregunta": "¿Para qué le sirve a un robot un sensor de distancia o de ultrasonido?",
+        "opciones": [
+            "Para hablar",
+            "Para no chocar contra las paredes",
+            "Para cambiar de color",
+            "Para cargar su batería"
+        ],
+        "respuesta_correcta": "Para no chocar contra las paredes",
+        "retroalimentacion": "El sensor detecta objetos cercanos y así el robot puede frenar antes de chocar."
+    },
+    {
+        "id": 129,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Robótica",
+        "eje": "Componentes",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "Si un robot parece un humano (con brazos, piernas y cabeza), decimos que es un robot...",
+        "opciones": [
+            "Androide o humanoide",
+            "Vehículo",
+            "Avión",
+            "Pelota"
+        ],
+        "respuesta_correcta": "Androide o humanoide",
+        "retroalimentacion": "Los robots humanoides tienen una forma parecida al cuerpo de las personas."
+    },
+    {
+        "id": 130,
+        "asignatura": "Artes y Creatividad",
+        "modulo_eduhome": "Robótica",
+        "eje": "Tecnología",
+        "oa": "OA 1",
+        "dificultad": "Difícil",
+        "pregunta": "¿Qué papel cumple el 'Cerebro' (microcontrolador) en un robot?",
+        "opciones": [
+            "Le da fuerza a las ruedas",
+            "Es el que guarda la energía",
+            "Procesa el código y da las órdenes a las partes",
+            "Hace que el robot brille"
+        ],
+        "respuesta_correcta": "Procesa el código y da las órdenes a las partes",
+        "retroalimentacion": "El microcontrolador recibe la información de los sensores y manda instrucciones a los motores."
+    },
+    {
+        "id": 131,
         "asignatura": "Desarrollo Integral",
         "modulo_eduhome": "Educación Socioemocional",
         "eje": "Autoconocimiento",
@@ -286,10 +2224,163 @@
             "Enojo"
         ],
         "respuesta_correcta": "Alegría",
-        "retroalimentacion": "La alegría es una emoción positiva que sentimos cuando ocurren cosas buenas y divertidas."
+        "retroalimentacion": "La alegría es una emoción positiva que sentimos cuando ocurren cosas buenas."
     },
     {
-        "id": 18,
+        "id": 132,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Educación Socioemocional",
+        "eje": "Empatía",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "Si un compañero se cae y llora, ¿qué es lo más empático que puedes hacer?",
+        "opciones": [
+            "Reírte",
+            "Ignorarlo",
+            "Preguntarle si está bien y ayudarlo",
+            "Empujarlo"
+        ],
+        "respuesta_correcta": "Preguntarle si está bien y ayudarlo",
+        "retroalimentacion": "La empatía es entender lo que siente el otro y apoyarlo."
+    },
+    {
+        "id": 133,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Educación Socioemocional",
+        "eje": "Regulación",
+        "oa": "OA 3",
+        "dificultad": "Fácil",
+        "pregunta": "Cuando estás muy enojado, ¿qué puedes hacer para calmarte?",
+        "opciones": [
+            "Gritar fuerte",
+            "Respirar profundo y contar hasta 10",
+            "Romper cosas",
+            "Pegarle a la pared"
+        ],
+        "respuesta_correcta": "Respirar profundo y contar hasta 10",
+        "retroalimentacion": "Respirar hondo ayuda a que tu cuerpo y mente se relajen."
+    },
+    {
+        "id": 134,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Educación Socioemocional",
+        "eje": "Resolución de conflictos",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "Si tú y tu amigo quieren jugar juegos distintos, ¿cuál es la mejor solución?",
+        "opciones": [
+            "Pelear",
+            "No jugar más",
+            "Llegar a un acuerdo y jugar un rato cada uno",
+            "Obligarlo a jugar el tuyo"
+        ],
+        "respuesta_correcta": "Llegar a un acuerdo y jugar un rato cada uno",
+        "retroalimentacion": "Llegar a un acuerdo es la mejor forma de resolver un conflicto pacíficamente."
+    },
+    {
+        "id": 135,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Educación Socioemocional",
+        "eje": "Autoconcepto",
+        "oa": "OA 1",
+        "dificultad": "Difícil",
+        "pregunta": "¿Qué significa tener buena autoestima?",
+        "opciones": [
+            "Creer que eres mejor que todos",
+            "Quererte y aceptarte como eres",
+            "Estar siempre triste",
+            "No hablar con nadie"
+        ],
+        "respuesta_correcta": "Quererte y aceptarte como eres",
+        "retroalimentacion": "La autoestima es el aprecio y amor que te tienes a ti mismo."
+    },
+    {
+        "id": 136,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Educación Socioemocional",
+        "eje": "Autoconocimiento",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué emoción sueles sentir si te pierdes en un lugar desconocido?",
+        "opciones": [
+            "Miedo",
+            "Alegría",
+            "Hambre",
+            "Risa"
+        ],
+        "respuesta_correcta": "Miedo",
+        "retroalimentacion": "El miedo es normal ante situaciones peligrosas o desconocidas."
+    },
+    {
+        "id": 137,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Educación Socioemocional",
+        "eje": "Empatía",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Cómo crees que se siente un amigo si no lo invitan a jugar?",
+        "opciones": [
+            "Feliz",
+            "Triste o excluido",
+            "Emocionado",
+            "Cansado"
+        ],
+        "respuesta_correcta": "Triste o excluido",
+        "retroalimentacion": "Ser dejado de lado suele causar tristeza."
+    },
+    {
+        "id": 138,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Educación Socioemocional",
+        "eje": "Regulación",
+        "oa": "OA 3",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué puedes hacer si cometes un error?",
+        "opciones": [
+            "Enojarte mucho",
+            "Llorar sin parar",
+            "Aprender de él y volver a intentarlo",
+            "Echarle la culpa a otro"
+        ],
+        "respuesta_correcta": "Aprender de él y volver a intentarlo",
+        "retroalimentacion": "Los errores son oportunidades maravillosas para aprender."
+    },
+    {
+        "id": 139,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Educación Socioemocional",
+        "eje": "Resolución de conflictos",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "¿Qué palabras son 'mágicas' para llevarse bien con los demás?",
+        "opciones": [
+            "Sal de aquí",
+            "Por favor y Gracias",
+            "No me importa",
+            "Dame eso"
+        ],
+        "respuesta_correcta": "Por favor y Gracias",
+        "retroalimentacion": "Usar palabras amables mejora mucho la relación con las personas."
+    },
+    {
+        "id": 140,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Educación Socioemocional",
+        "eje": "Autoconcepto",
+        "oa": "OA 1",
+        "dificultad": "Difícil",
+        "pregunta": "¿Qué debes recordar cuando algo te cuesta mucho trabajo?",
+        "opciones": [
+            "Que no sirves para nada",
+            "Que debes rendirte",
+            "Que con práctica y esfuerzo puedes lograrlo",
+            "Que alguien más debe hacerlo por ti"
+        ],
+        "respuesta_correcta": "Que con práctica y esfuerzo puedes lograrlo",
+        "retroalimentacion": "La perseverancia es clave; no todos aprendemos al mismo ritmo."
+    },
+    {
+        "id": 141,
         "asignatura": "Desarrollo Integral",
         "modulo_eduhome": "Taller de Funciones Ejecutivas",
         "eje": "Organización",
@@ -303,10 +2394,163 @@
             "Empezar la tarea y no terminarla"
         ],
         "respuesta_correcta": "La tarea, luego jugar y después cenar",
-        "retroalimentacion": "Organizar tu tiempo haciendo primero las responsabilidades como la tarea te deja libre para disfrutar jugando y luego cenar tranquilo."
+        "retroalimentacion": "Organizar tu tiempo cumpliendo primero tus responsabilidades es un buen hábito."
     },
     {
-        "id": 19,
+        "id": 142,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Funciones Ejecutivas",
+        "eje": "Planificación",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "Si tienes un examen mañana, ¿qué debes hacer hoy?",
+        "opciones": [
+            "Ver tele todo el día",
+            "Estudiar un rato y repasar",
+            "Ir a dormir muy tarde",
+            "Llorar"
+        ],
+        "respuesta_correcta": "Estudiar un rato y repasar",
+        "retroalimentacion": "Planificar tu tiempo de estudio te ayuda a estar preparado."
+    },
+    {
+        "id": 143,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Funciones Ejecutivas",
+        "eje": "Memoria de Trabajo",
+        "oa": "OA 3",
+        "dificultad": "Difícil",
+        "pregunta": "Si te dicen: 'Trae tu cuaderno, tu lápiz y tu goma', ¿cuántas cosas debes recordar?",
+        "opciones": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "respuesta_correcta": "3",
+        "retroalimentacion": "Debes recordar 3 objetos: cuaderno, lápiz y goma."
+    },
+    {
+        "id": 144,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Funciones Ejecutivas",
+        "eje": "Flexibilidad",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "Si vas a salir a jugar pelota, pero empieza a llover fuerte, ¿qué haces?",
+        "opciones": [
+            "Llorar porque se arruinó el día",
+            "Salir igual y enfermarme",
+            "Buscar un juego divertido para hacer dentro de casa",
+            "Enojarme con el cielo"
+        ],
+        "respuesta_correcta": "Buscar un juego divertido para hacer dentro de casa",
+        "retroalimentacion": "Ser flexible significa adaptarse a los cambios cuando los planes fallan."
+    },
+    {
+        "id": 145,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Funciones Ejecutivas",
+        "eje": "Control Inhibitorio",
+        "oa": "OA 5",
+        "dificultad": "Media",
+        "pregunta": "Si estás en clases y tienes muchas ganas de contar un chiste, debes...",
+        "opciones": [
+            "Gritarlo de inmediato",
+            "Esperar al recreo o pedir la palabra en el momento adecuado",
+            "Interrumpir a la profesora",
+            "Hacer ruidos raros"
+        ],
+        "respuesta_correcta": "Esperar al recreo o pedir la palabra en el momento adecuado",
+        "retroalimentacion": "Controlar nuestros impulsos ayuda a mantener el respeto en clases."
+    },
+    {
+        "id": 146,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Funciones Ejecutivas",
+        "eje": "Planificación",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "Antes de empezar a hacer un dibujo muy bonito, es buena idea...",
+        "opciones": [
+            "Manchar la hoja",
+            "Tener listos los lápices y pensar qué dibujar",
+            "Romper el papel",
+            "Botar los colores"
+        ],
+        "respuesta_correcta": "Tener listos los lápices y pensar qué dibujar",
+        "retroalimentacion": "Preparar los materiales y tener una idea es parte de planificar."
+    },
+    {
+        "id": 147,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Funciones Ejecutivas",
+        "eje": "Organización",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Qué pasa si guardas tus juguetes todos desordenados?",
+        "opciones": [
+            "Será más fácil encontrarlos mañana",
+            "Será muy difícil encontrar el que buscas la próxima vez",
+            "Se multiplican",
+            "La pieza se ve más linda"
+        ],
+        "respuesta_correcta": "Será muy difícil encontrar el que buscas la próxima vez",
+        "retroalimentacion": "La organización nos ayuda a saber dónde están nuestras cosas."
+    },
+    {
+        "id": 148,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Funciones Ejecutivas",
+        "eje": "Control Inhibitorio",
+        "oa": "OA 5",
+        "dificultad": "Media",
+        "pregunta": "Estás jugando un videojuego y tu mamá te llama a cenar, tú debes...",
+        "opciones": [
+            "Ignorarla",
+            "Pausar el juego e ir a cenar",
+            "Gritarle que espere una hora",
+            "Llorar"
+        ],
+        "respuesta_correcta": "Pausar el juego e ir a cenar",
+        "retroalimentacion": "Saber detener una actividad divertida para cumplir con el horario es controlar nuestros impulsos."
+    },
+    {
+        "id": 149,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Funciones Ejecutivas",
+        "eje": "Memoria de Trabajo",
+        "oa": "OA 3",
+        "dificultad": "Difícil",
+        "pregunta": "¿Para qué sirve anotar las tareas en una agenda?",
+        "opciones": [
+            "Para pintar los días",
+            "Para descargar a nuestra mente de tener que recordar todo",
+            "Para que el profesor nos rete",
+            "Para hacer aviones de papel"
+        ],
+        "respuesta_correcta": "Para descargar a nuestra mente de tener que recordar todo",
+        "retroalimentacion": "La agenda nos ayuda a apoyar nuestra memoria y no olvidar obligaciones."
+    },
+    {
+        "id": 150,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Funciones Ejecutivas",
+        "eje": "Flexibilidad",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "Si un problema matemático es muy difícil y no te sale usando una forma, ¿qué debes hacer?",
+        "opciones": [
+            "No hacerlo nunca más",
+            "Borrar el cuaderno entero",
+            "Intentar resolverlo buscando otra forma o estrategia distinta",
+            "Llorar en la mesa"
+        ],
+        "respuesta_correcta": "Intentar resolverlo buscando otra forma o estrategia distinta",
+        "retroalimentacion": "La flexibilidad mental nos permite buscar caminos alternativos para lograr un objetivo."
+    },
+    {
+        "id": 151,
         "asignatura": "Desarrollo Integral",
         "modulo_eduhome": "Taller de Movimiento y Coordinación",
         "eje": "Motricidad",
@@ -320,6 +2564,159 @@
             "Cantas bajito"
         ],
         "respuesta_correcta": "Mueves los pies y las manos coordinadamente",
-        "retroalimentacion": "Saltar la cuerda requiere mover las manos para girar la cuerda y saltar con los pies al mismo tiempo. ¡Es un excelente ejercicio de coordinación!"
+        "retroalimentacion": "Saltar requiere mover las manos y saltar al mismo tiempo."
+    },
+    {
+        "id": 152,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Movimiento y Coordinación",
+        "eje": "Equilibrio",
+        "oa": "OA 2",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué animal se caracteriza por pararse en una sola pata, mostrando buen equilibrio?",
+        "opciones": [
+            "El elefante",
+            "El flamenco",
+            "El gusano",
+            "El león"
+        ],
+        "respuesta_correcta": "El flamenco",
+        "retroalimentacion": "El flamenco puede mantener su equilibrio en una sola pierna mucho tiempo."
+    },
+    {
+        "id": 153,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Movimiento y Coordinación",
+        "eje": "Motricidad fina",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "¿Cuál de estas actividades usa 'motricidad fina'?",
+        "opciones": [
+            "Correr rápido",
+            "Saltar muy alto",
+            "Enhebrar una aguja o escribir",
+            "Patear un balón"
+        ],
+        "respuesta_correcta": "Enhebrar una aguja o escribir",
+        "retroalimentacion": "La motricidad fina usa los músculos pequeños de las manos con precisión."
+    },
+    {
+        "id": 154,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Movimiento y Coordinación",
+        "eje": "Motricidad gruesa",
+        "oa": "OA 5",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué deporte requiere correr y patear un balón?",
+        "opciones": [
+            "Ajedrez",
+            "Fútbol",
+            "Natación",
+            "Ciclismo"
+        ],
+        "respuesta_correcta": "Fútbol",
+        "retroalimentacion": "El fútbol es un deporte de mucho movimiento de piernas."
+    },
+    {
+        "id": 155,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Movimiento y Coordinación",
+        "eje": "Salud",
+        "oa": "OA 1",
+        "dificultad": "Media",
+        "pregunta": "¿Por qué es importante hacer deporte y moverse?",
+        "opciones": [
+            "Para estar aburrido",
+            "Para enfermarse",
+            "Para mantener los músculos y el corazón sanos",
+            "Para ver más televisión"
+        ],
+        "respuesta_correcta": "Para mantener los músculos y el corazón sanos",
+        "retroalimentacion": "El ejercicio fortalece todo nuestro cuerpo."
+    },
+    {
+        "id": 156,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Movimiento y Coordinación",
+        "eje": "Equilibrio",
+        "oa": "OA 2",
+        "dificultad": "Media",
+        "pregunta": "¿Qué pasa si intentas caminar por una línea recta en el suelo imaginando que es una cuerda floja?",
+        "opciones": [
+            "Estás practicando el equilibrio",
+            "Estás saltando",
+            "Estás corriendo",
+            "Estás nadando"
+        ],
+        "respuesta_correcta": "Estás practicando el equilibrio",
+        "retroalimentacion": "Mantener el cuerpo centrado sobre una línea es un gran ejercicio de equilibrio."
+    },
+    {
+        "id": 157,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Movimiento y Coordinación",
+        "eje": "Motricidad gruesa",
+        "oa": "OA 5",
+        "dificultad": "Fácil",
+        "pregunta": "¿Qué parte de tu cuerpo usas más al saltar como un canguro?",
+        "opciones": [
+            "Las orejas",
+            "Las piernas",
+            "La nariz",
+            "Las manos"
+        ],
+        "respuesta_correcta": "Las piernas",
+        "retroalimentacion": "Las piernas son fundamentales para darnos el impulso al saltar."
+    },
+    {
+        "id": 158,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Movimiento y Coordinación",
+        "eje": "Motricidad fina",
+        "oa": "OA 4",
+        "dificultad": "Media",
+        "pregunta": "Recortar una figura de papel con tijeras siguiendo la línea es un ejercicio de...",
+        "opciones": [
+            "Motricidad gruesa",
+            "Motricidad fina",
+            "Fuerza",
+            "Respiración"
+        ],
+        "respuesta_correcta": "Motricidad fina",
+        "retroalimentacion": "Recortar con precisión usa los músculos de los dedos de forma coordinada."
+    },
+    {
+        "id": 159,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Movimiento y Coordinación",
+        "eje": "Coordinación",
+        "oa": "OA 3",
+        "dificultad": "Difícil",
+        "pregunta": "¿Qué deporte requiere que uses manos y pies de forma coordinada en el agua?",
+        "opciones": [
+            "El fútbol",
+            "La natación",
+            "El ajedrez",
+            "Saltar la cuerda"
+        ],
+        "respuesta_correcta": "La natación",
+        "retroalimentacion": "En la natación debes patear y mover los brazos rítmicamente para avanzar."
+    },
+    {
+        "id": 160,
+        "asignatura": "Desarrollo Integral",
+        "modulo_eduhome": "Taller de Movimiento y Coordinación",
+        "eje": "Salud",
+        "oa": "OA 1",
+        "dificultad": "Fácil",
+        "pregunta": "Después de hacer mucho ejercicio y correr, ¿qué debes hacer?",
+        "opciones": [
+            "Comer muchos dulces",
+            "No hacer nada",
+            "Tomar agua para hidratarte",
+            "Seguir corriendo hasta caer"
+        ],
+        "respuesta_correcta": "Tomar agua para hidratarte",
+        "retroalimentacion": "Al sudar perdemos agua, por lo que es vital beber agua para recuperarnos."
     }
 ]
