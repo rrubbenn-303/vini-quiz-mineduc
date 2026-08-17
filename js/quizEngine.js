@@ -23,7 +23,8 @@ class QuizEngine {
         try {
             // Añadir un parámetro timestamp para evitar el caché del navegador y cargar el JSON más reciente
             const timestamp = new Date().getTime();
-            const response = await fetch(`data/preguntas.json?t=${timestamp}`);
+            const randomBuster = Math.random().toString(36).substring(7);
+            const response = await fetch(`data/preguntas.json?t=${timestamp}&r=${randomBuster}`, { cache: "no-store" });
             this.allQuestions = await response.json();
             return true;
         } catch (error) {
