@@ -1,0 +1,11 @@
+runtime: python311
+service: tweet-ingester
+
+entrypoint: uvicorn src.ingester:app --host 0.0.0.0 --port $PORT
+
+env_variables:
+  # GCP project variables are typically auto-injected, but you can set them here if needed
+  # GOOGLE_CLOUD_PROJECT: "your-project-id"
+
+# Note: The Processor should ideally be deployed to a separate service
+# like a Compute Engine instance or a separate Cloud Run service configured for always-on / background tasks.
