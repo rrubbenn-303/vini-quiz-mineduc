@@ -1,0 +1,46 @@
+name: Pelican Monitor
+
+on:
+  schedule:
+    # Roda a cada 2 horas
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+    # Permite rodar o script manualmente a partir do Github UI
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest
+
+    # É necessário permissão de write content para que o Github Actions consiga comitar de volta
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          cd pelican_monitor
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Monitor Script
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          cd pelican_monitor
+          python monitor.py
+
+      - name: Commit and Push state file
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add pelican_monitor/processed_ids.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: atualizar processed_ids.json" && git push)
