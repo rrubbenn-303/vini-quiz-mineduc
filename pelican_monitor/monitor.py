@@ -1,18 +1,14 @@
 import os
 import json
-import requests
 import importlib
 
-# Configurações do Telegram
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+import config
+import classifier
+import telegram
 
 # Caminho para o arquivo de estado (IDs já processados)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(BASE_DIR, "processed_ids.json")
-
-# Termos de busca
-TERMS = ["pelican", "peli case", "maleta estanque pelican"]
 
 # Quantos dias para trás consultar (Janela Ampliada)
 DAYS_BACK = 7
@@ -33,76 +29,47 @@ def save_processed_ids(ids):
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(list(ids), f, indent=2)
 
-def send_telegram_message(message):
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        print("Aviso: Configurações do Telegram (TOKEN ou CHAT_ID) não encontradas.")
-        print("Mensagem que seria enviada:\n", message)
-        return
-
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {
-        "chat_id": TELEGRAM_CHAT_ID,
-        "text": message,
-        "parse_mode": "HTML"
-    }
-
-    try:
-        response = requests.post(url, json=payload, timeout=10)
-        response.raise_for_status()
-        print("Mensagem enviada com sucesso para o Telegram.")
-    except Exception as e:
-        print(f"Erro ao enviar mensagem para o Telegram: {e}")
-
 def main():
     processed_ids = load_processed_ids()
-    print(f"Iniciando monitoramento de editais para os termos {TERMS} (Últimos {DAYS_BACK} dias)")
+    print(f"Iniciando monitoramento de editais para os termos base {config.SEED_TERMS_API} (Últimos {DAYS_BACK} dias)")
 
-    all_new_tenders = []
     success_count = 0
+    notificacoes_enviadas = 0
 
     for provider_name in ACTIVE_PROVIDERS:
         print(f"Executando provider: {provider_name}")
         try:
             module = importlib.import_module(f"providers.{provider_name}")
-            # Retorna lista padronizada
-            results = module.search(TERMS, days_back=DAYS_BACK)
+
+            # Para o web_search, os termos já estão otimizados lá dentro.
+            # Para os outros, passamos a semente SEED_TERMS_API
+            results = module.search(config.SEED_TERMS_API, days_back=DAYS_BACK)
 
             for item in results:
                 item_id = item.get("id")
+
+                # Só processa se for novo
                 if item_id and item_id not in processed_ids:
-                    all_new_tenders.append(item)
+
+                    title = item.get("title", "")
+                    desc = item.get("description", "")
+
+                    # Classificação Inteligente
+                    categoria, produto, qtd, snippet = classifier.classify(title, desc)
+
+                    if categoria:
+                        msg = telegram.format_alert(item, categoria, produto, qtd, snippet)
+                        telegram.send_message(msg)
+                        notificacoes_enviadas += 1
+
+                    # Independentemente se foi descartado ou notificado, adiciona para não re-analisar
                     processed_ids.add(item_id)
 
             success_count += 1
         except Exception as e:
             print(f"Falha global ao executar o provider {provider_name}: {e}")
 
-    if not all_new_tenders:
-        print(f"Nenhum novo edital encontrado. ({success_count}/{len(ACTIVE_PROVIDERS)} portais consultados com sucesso)")
-    else:
-        print(f"Foram encontrados {len(all_new_tenders)} novos editais. ({success_count}/{len(ACTIVE_PROVIDERS)} portais consultados com sucesso)")
-
-        for tender in all_new_tenders:
-            fonte = tender.get("source", "DESCONHECIDO")
-            orgao = tender.get("orgao", "Órgão não informado")
-            titulo = tender.get("title", "Título não informado")
-            valor = tender.get("valor", "Não informado")
-            link = tender.get("link", "")
-
-            # Formatar valor se for numérico
-            if isinstance(valor, (int, float)):
-                valor = f"R$ {valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
-
-            msg = (
-                f"🚨 <b>Novo Edital Encontrado!</b>\n\n"
-                f"🏢 <b>Fonte:</b> [{fonte}]\n"
-                f"🏛 <b>Órgão/Empresa:</b> {orgao}\n"
-                f"📄 <b>Objeto/Título:</b> {titulo}\n"
-                f"💰 <b>Valor:</b> {valor}\n\n"
-                f"🔗 <a href='{link}'>Acessar Oportunidade</a>"
-            )
-
-            send_telegram_message(msg)
+    print(f"Foram avaliados e salvos novos IDs. ({notificacoes_enviadas} notificações enviadas, {success_count}/{len(ACTIVE_PROVIDERS)} portais consultados com sucesso)")
 
     # Salvar estado atualizado
     save_processed_ids(processed_ids)
