@@ -1,8 +1,31 @@
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from datetime import datetime, timedelta
 import pytz
+import time
 
 BRT = pytz.timezone('America/Sao_Paulo')
+
+def create_session():
+    """
+    Cria uma sessão HTTP com políticas de retentativa (backoff)
+    para lidar com interrupções abruptas do PNCP (ex: Connection aborted).
+    """
+    session = requests.Session()
+
+    retries = Retry(
+        total=5,
+        backoff_factor=1,
+        status_forcelist=[ 429, 500, 502, 503, 504 ],
+        allowed_methods=["HEAD", "GET", "OPTIONS"]
+    )
+
+    adapter = HTTPAdapter(max_retries=retries)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+
+    return session
 
 def search(terms, days_back=7):
     """
@@ -10,6 +33,7 @@ def search(terms, days_back=7):
     Retorna lista de dicts: [{"id", "title", "orgao", "link", "valor", "term", "source"}]
     """
     results = []
+    session = create_session()
 
     # Calcular as datas na janela de dias
     now = datetime.now(BRT)
@@ -23,7 +47,7 @@ def search(terms, days_back=7):
         dates_to_search.append((date_api_str, date_filter_str))
 
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
         "Accept": "application/json"
     }
 
@@ -38,7 +62,10 @@ def search(terms, days_back=7):
                 "data_final": date_api
             }
             try:
-                response = requests.get(url, params=params, headers=headers, timeout=30)
+                # Sleep de 1 segundo entre as chamadas para não sofrer rate limit do portal
+                time.sleep(1)
+
+                response = session.get(url, params=params, headers=headers, timeout=30)
                 if response.status_code == 200:
                     items = response.json().get("items", [])
                     for item in items:
@@ -74,6 +101,8 @@ def search(terms, days_back=7):
                             "term": term,
                             "source": "PNCP"
                         })
+                else:
+                    print(f"[PNCP] Resposta não 200 para termo '{term}' na data {date_api}: {response.status_code}")
             except Exception as e:
                 print(f"[PNCP] Erro ao buscar termo '{term}' na data {date_api}: {e}")
 

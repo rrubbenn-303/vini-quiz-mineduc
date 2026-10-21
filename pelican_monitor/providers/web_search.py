@@ -3,24 +3,26 @@ from ddgs import DDGS
 
 def search(terms, days_back=7):
     """
-    Busca menções recentes aos termos na web combinados com palavras-chave de licitação.
-    Utiliza o DuckDuckGo Search (gratuito).
+    Busca menções recentes aos termos na web.
+    Filtro anti-ruído forte aplicado nativamente nas queries para duckduckgo.
     """
     results = []
 
-    keywords = ['licitação', 'pregão', 'edital', 'compras']
+    # Termos e palavras negativas focadas no contexto brasileiro e de hardware
+    refined_terms = ['"maleta pelican"', '"case pelican"', '"maleta estanque pelican"']
+    buying_keywords = ['cotação', 'aquisição', 'orçamento', 'licitação', 'comprar']
+    negative_words = '-nba -basketball -filme -movie -caneta -cupom -desconto -pelikano'
 
     # days_back = 7 map para DuckDuckGo time='w' (past week)
     time_filter = "w" if days_back <= 7 else "m"
 
     try:
         ddgs = DDGS()
-        for term in terms:
-            for kw in keywords:
-                query = f'"{term}" {kw}'
+        for r_term in refined_terms:
+            for kw in buying_keywords:
+                query = f'{r_term} {kw} {negative_words}'
                 try:
-                    # Buscamos poucos resultados (max_results=5) para não sobrecarregar
-                    search_results = list(ddgs.text(query, region='br-pt', safesearch='off', timelimit=time_filter, max_results=5))
+                    search_results = list(ddgs.text(query, region='br-pt', safesearch='off', timelimit=time_filter, max_results=3))
 
                     for r in search_results:
                         title = r.get("title", "")
@@ -40,7 +42,7 @@ def search(terms, days_back=7):
                             "orgao": "Desconhecido (Busca Web)",
                             "link": link,
                             "valor": "Não informado",
-                            "term": term,
+                            "term": r_term.replace('"', ''),
                             "source": "WEB SEARCH"
                         })
                 except Exception as e:
