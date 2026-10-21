@@ -35,12 +35,25 @@ def extract_snippet(text, match_obj, padding=100):
     snippet = re.sub(r'\s+', ' ', snippet).strip()
     return f"{prefix}{snippet}{suffix}"
 
-def classify(title, description):
+def classify(tender):
     """
-    Avalia o título e a descrição de uma oportunidade.
+    Avalia uma oportunidade de compra com base nos contratos estritos.
     Retorna (Categoria, Produto_Identificado, Quantidade, Snippet) ou (None, None, None, None) se descartado.
     Categorias: "PRIORITARIA" ou "POTENCIAL".
     """
+    orgao = tender.get("orgao")
+    processo = tender.get("process_number")
+
+    # Validação Restrita do Contrato de Dados (Deve ter Órgão/Empresa explícito e Número de Processo)
+    if not orgao or orgao.lower() in ["desconhecido", "não informado", "nao informado"]:
+        return None, None, None, None
+
+    if not processo or processo.lower() in ["desconhecido", "não informado", "nao informado"]:
+        return None, None, None, None
+
+    title = tender.get("title", "")
+    description = tender.get("description", "")
+
     # Juntar título e descrição para análise
     full_text = f"{title}. {description}".replace("\n", " ")
 

@@ -42,9 +42,12 @@ def format_alert(tender, category, produto, qtd, snippet):
     status = tender.get("status", "Aberto")
     link = tender.get("link", "")
 
+    processo = tender.get("process_number", "Não informado")
+
     msg = (
         f"{icone} <b>{tipo_alerta}</b>\n\n"
         f"🏢 <b>Órgão / Comprador:</b> {orgao} [{fonte}]\n"
+        f"🏷 <b>Edital / Processo:</b> {processo}\n"
         f"📦 <b>Produto / Modelo Identificado:</b> {produto}\n"
         f"🔢 <b>Quantidade:</b> {qtd}\n"
         f"💰 <b>Valor (Total/Unitário):</b> {valor}\n"
