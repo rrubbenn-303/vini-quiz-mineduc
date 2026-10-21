@@ -14,7 +14,16 @@ STATE_FILE = os.path.join(BASE_DIR, "processed_ids.json")
 DAYS_BACK = 7
 
 # Lista de providers ativos a serem carregados dinamicamente da pasta providers/
-ACTIVE_PROVIDERS = ['pncp', 'petronect', 'licitacoes_e', 'web_search']
+ACTIVE_PROVIDERS = [
+    'pncp',
+    'compras_gov_br',
+    'licitacoes_e',
+    'bec_sp',
+    'bll_compras',
+    'portal_compras_publicas',
+    'petronect',
+    'mercado_eletronico'
+]
 
 def load_processed_ids():
     if os.path.exists(STATE_FILE):
@@ -51,11 +60,8 @@ def main():
                 # Só processa se for novo
                 if item_id and item_id not in processed_ids:
 
-                    title = item.get("title", "")
-                    desc = item.get("description", "")
-
                     # Classificação Inteligente
-                    categoria, produto, qtd, snippet = classifier.classify(title, desc)
+                    categoria, produto, qtd, snippet = classifier.classify(item)
 
                     if categoria:
                         msg = telegram.format_alert(item, categoria, produto, qtd, snippet)

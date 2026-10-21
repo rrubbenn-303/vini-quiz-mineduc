@@ -85,6 +85,9 @@ def search(terms, days_back=7):
                         objeto = item.get("description", "Objeto não informado")
                         valor = item.get("valor_total_estimado") or item.get("valor_total_homologado") or "Não informado"
 
+                        # Process/Edital number
+                        process_number = item.get("numero_sequencial_compra_ata") or item.get("numero_controle_pncp") or "Não informado"
+
                         # Novos campos extraídos para classificação e formatação
                         prazo = item.get("data_fim_recebimento_propostas") or item.get("data_encerramento_proposta") or "Não informado"
                         if prazo != "Não informado" and "T" in prazo:
@@ -104,6 +107,7 @@ def search(terms, days_back=7):
                             "title": titulo,
                             "description": objeto,
                             "orgao": orgao,
+                            "process_number": process_number,
                             "link": link,
                             "valor": valor,
                             "prazo": prazo,
