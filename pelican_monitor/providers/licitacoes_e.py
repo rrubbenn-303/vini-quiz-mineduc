@@ -48,9 +48,12 @@ def search(terms, days_back=7):
                         results.append({
                             "id": item_id,
                             "title": titulo,
+                            "description": "",
                             "orgao": orgao,
                             "link": link,
                             "valor": "Não informado",
+                            "prazo": "Não informado",
+                            "status": "Não informado",
                             "term": term,
                             "source": "LICITAÇÕES-E"
                         })

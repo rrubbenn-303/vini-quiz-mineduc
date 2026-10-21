@@ -85,6 +85,13 @@ def search(terms, days_back=7):
                         objeto = item.get("description", "Objeto não informado")
                         valor = item.get("valor_total_estimado") or item.get("valor_total_homologado") or "Não informado"
 
+                        # Novos campos extraídos para classificação e formatação
+                        prazo = item.get("data_fim_recebimento_propostas") or item.get("data_encerramento_proposta") or "Não informado"
+                        if prazo != "Não informado" and "T" in prazo:
+                            prazo = prazo.replace("T", " ")
+
+                        status = item.get("situacao_nome", "Aberto")
+
                         # Formatar URL
                         item_url = item.get("item_url", "")
                         if item_url.startswith("/"):
@@ -94,10 +101,13 @@ def search(terms, days_back=7):
 
                         results.append({
                             "id": f"pncp_{item_id}",
-                            "title": f"{titulo} - {objeto}",
+                            "title": titulo,
+                            "description": objeto,
                             "orgao": orgao,
                             "link": link,
                             "valor": valor,
+                            "prazo": prazo,
+                            "status": status,
                             "term": term,
                             "source": "PNCP"
                         })
